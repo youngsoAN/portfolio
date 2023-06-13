@@ -81,7 +81,7 @@ header .header-menu .hidden {
 .header-btn ul li a:hover .list {
   display: block;
 }
-.header-btn img {
+header .menu img {
   width: 30px;
   margin: 0 50px;
 }
@@ -222,9 +222,9 @@ main .section2 .gray a:hover img {
   top: 100px;
   left: 280px;
 }
-.main-img .txt {
+.section3 .main-img .txt-hidden {
+  display: none;
 }
-
 .section4 {
   overflow: hidden;
   background-color: #ddd;
@@ -275,9 +275,9 @@ main .section2 .gray a:hover img {
   justify-content: center;
 }
 .section5 .icon a {
-width: 300px;
-margin: 20px;
-justify-content: center;
+  width: 300px;
+  margin: 20px;
+  justify-content: center;
 }
 .section6 {
   background-color: #fff;

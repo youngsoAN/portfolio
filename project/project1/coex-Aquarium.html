@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Document</title>
+  <meta property="og:title" content="The Rock" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://youngsoan.github.io/portfolio/" />
+  <meta property="og:image"
+    content="https://github.com/youngsoAN/portfolio/blob/main/project/project1/images/20734.jpg" />
+
   <!-- reset -->
   <link rel="stylesheet" href="../common/minireset.min.css">
   <!-- fonts -->
   <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
-  <!-- pc -->
-  <link rel="stylesheet" href="./coex-Aquarium.css">
   <!-- mobile -->
-  <link rel="stylesheet" href="./">
+  <link rel="stylesheet" media="(max-width : 480px)" href="./coex-Aquarium-mobile.css">
+  <!-- pc -->
+  <link rel="stylesheet" media="(width >= 1200px)" href="./coex-Aquarium.css">
+
+
 </head>
 
 <body>
   <header class="flex">
     <div class="header-logo">
-      <img src="./images/제작아이콘/coex-logo.png" alt="코엑스아쿠아리움 로고 이미지입니다.">
+      <img src="./images/icon/coex-logo.png" alt="코엑스아쿠아리움 로고 이미지입니다.">
     </div>
     <div>
       <ul class="header-menu flex">
@@ -76,6 +84,8 @@
           </ul>
         </li>
       </ul>
+    </div>
+    <div class="menu">
       <a href="#"><img src="./images/메뉴버튼.png" alt="메뉴 아이콘입니다."></a>
     </div>
     <div class="chat">
@@ -95,7 +105,7 @@
             <h3>오늘의 운영 시간</h3>
             <p>10:00 ~ 20:00</p>
             <p>프로그램 운영시간을 미리 확인할 수 있어요!</p>
-            <img src="./images/제작아이콘/시계icon.png" alt="">
+            <img src="./images/icon/시계icon.png" alt="">
           </div>
         </a>
         <a href="#">
@@ -103,7 +113,7 @@
             <h3>e-TICKET 구매</h3>
             <p>티켓 사전구매</p>
             <p>원하는 날의 입장권과 프로그램 구매가 가능해요.</p>
-            <img src="./images/제작아이콘/돋보기icon.png" alt="">
+            <img src="./images/icon/돋보기icon.png" alt="">
           </div>
         </a>
         <a href="#">
@@ -111,7 +121,7 @@
             <h3>오늘의 공기질</h3>
             <p>실내 공기질 현황</p>
             <p>늘 신선한 공기질을 제공하기 위해 최선을 다하고 있습니다.</p>
-            <img src="./images/제작아이콘/공기순환icon.png" alt="">
+            <img src="./images/icon/공기순환icon.png" alt="">
           </div>
         </a>
       </div>
@@ -135,7 +145,7 @@
 
     <section class="section3">
       <div class="main-img">
-        <div class="img">
+        <div class="img1">
           <img src="./images/B.png" alt="해양테마파크 B 이미지 입니다">
           <img class="Fish" src="./images/dictionary_20210322135728119.png" alt="물고기">
           <img class="Fish" src="./images/dictionary_20210322135728119.png" alt="물고기2">
@@ -154,19 +164,42 @@
           <a href="#">구글플레이 이미지 들어갈곳</a>
           <a href="#">애플 스토어 이미지 들어갈곳</a>
         </div>
+        <div class="txt-hidden">
+          <h1>국내 최고의 해양테마파크!</h1>
+          <h2>Best Marine Theme Park</h2>
+          <p>4만여 수중물이 사는 곳, 국내 최다 상어 서식지! </p>
+          <a href="#" class="arrow-btn flex">
+            <p>사이트 바로가기</p>
+            <img src="./images/arrow.png" alt="화살표 이미지입니다.">
+          </a>
+          <div class="store flex">
+            <a href="#"><img src="./images/플레이스토어.png" alt="구글플레이 이미지입니다"></a>
+            <a href="#"><img src="./images/애플스토어 로고 (m).png" alt="앱스토어 이미지입니다"></a>
+
+          </div>
+        </div>
       </div>
 
 
       <div class="main-img">
-        <div class="img">
+        <div class="img2">
           <img src="./images/M.png" alt="해양테마파크 M 이미지입니다">
           <img src="./images/ipad-side.png" alt="수족관 정보 이미지입니다">
           <img src="./images/흰동가리.png" alt="흰동가리입니다">
           <img src="./images/흰동가리.png" alt="흰동가리입니다">
           <img src="./images/흰동가리.png" alt="흰동가리입니다">
-          <img src="./images/20734.jpg" alt="빨간색 열대어입니다">
+          <img src="./images/열대어.png" alt="빨간색 열대어입니다">
         </div>
         <div class="txt">
+          <h1>산호미술관, 열대어 등<br>다양한 모바일 소개 페이지</h1>
+          <h2>Tropical Fish - Mobail Page</h2>
+          <p>전시 테마별 생물들의 서식지와 간단한 특성을 소개합니다.<br>화려한 열대어의 매력에 빠져보세요!</p>
+          <a href="#">
+            <p>사이트 바로가기</p>
+            <img src="./images/arrow.png" alt="화살표 이미지입니다.">
+          </a>
+        </div>
+        <div class="txt-hidden">
           <h1>산호미술관, 열대어 등<br>다양한 모바일 소개 페이지</h1>
           <h2>Tropical Fish - Mobail Page</h2>
           <p>전시 테마별 생물들의 서식지와 간단한 특성을 소개합니다.<br>화려한 열대어의 매력에 빠져보세요!</p>
@@ -178,12 +211,20 @@
       </div>
 
       <div class="main-img">
-        <div class="img">
+        <div class="img3">
           <img src="./images/D.png" alt="D 이미지입니다">
           <img src="./images/아이폰-옆모습-할인 2.png" alt="아이폰에 할인 정보가 떠있는 화면입니다">
           <img src="./images/아이폰-옆모습-할인.png" alt="">
         </div>
         <div class="txt">
+          <h1>할인정보 &<br>우대조건 확인</h1>
+          <h2>Discount information</h2>
+          <p>코엑스 아쿠아리움에서 판매하는 기념품 굿즈를 소개합니다.<br>할인정보를 잘 알아보시고 혜택 놓치지 마세요!</p>
+          <a href="#">앱 스토어 이미지 들어갈곳
+            <img src="./images/arrow.png" alt="화살표 이미지입니다.">
+          </a>
+        </div>
+        <div class="txt-hidden">
           <h1>할인정보 &<br>우대조건 확인</h1>
           <h2>Discount information</h2>
           <p>코엑스 아쿠아리움에서 판매하는 기념품 굿즈를 소개합니다.<br>할인정보를 잘 알아보시고 혜택 놓치지 마세요!</p>
@@ -217,25 +258,25 @@
       <p>코엑스아쿠아리움은 자연, 환경, 사람의 조화를 통한 독창적인 콘텐츠르 개발하여 365일 넘치는 즐거움을 여러분들에게 선물하고자 합니다.</p>
       <div class="icon flex">
         <a href="#">
-          <img src="./images/제작아이콘/크기아이콘-회색.png" alt="총 면적 아이콘">
+          <img src="./images/icon/크기아이콘-회색.png" alt="총 면적 아이콘">
           <p><strong>총 면적</strong>15,970㎡</p>
           <p>알맞은 사육환경을 고려한 면적입니다.</p>
         </a>
 
         <a href="#">
-          <img src="./images/제작아이콘/물고기아이콘-회색.png" alt="전시수조 아이콘">
+          <img src="./images/icon/물고기아이콘-회색.png" alt="전시수조 아이콘">
           <p><strong>전시 수조 183개</strong>,사육수조 90개</p>
           <p>사육수조와 전시수조를 구분해 케어합니다.</p>
         </a>
 
         <a href="#">
-          <img src="./images/제작아이콘/수조아이콘.png" alt="총 무게 아이콘">
+          <img src="./images/icon/수조아이콘.png" alt="총 무게 아이콘">
           <p><strong>약 3,500톤</strong></p>
           <p>전체 면적과 크기의 무게가<br>약 3500톤에 달합니다.</p>
         </a>
 
         <a href="#">
-          <img src="./images/제작아이콘/상어아이콘.png" alt="물고기 아이콘">
+          <img src="./images/icon/상어아이콘.png" alt="물고기 아이콘">
           <p><strong>650여 종</strong>40,000여 마리</p>
           <p>다양한 어종들을 보유하고 있습니다.</p>
         </a>
@@ -255,7 +296,7 @@
             <p>2023 5월 가정의 날 이벤트 안내 페이지</p>
           </div>
           <div>
-            <a href="#"><img src="./images/제작아이콘/더보기버튼.png" alt="더보기버튼 아이콘입니다."></a>
+            <a href="#"><img src="./images/icon/더보기버튼.png" alt="더보기버튼 아이콘입니다."></a>
           </div>
 
         </li>
@@ -266,7 +307,7 @@
             <p>2023 5월 진주찾기 체험 오픈! - 조개 속 진주를 찾고 이벤트에 참여하세요!</p>
           </div>
           <div>
-            <a href="#"><img src="./images/제작아이콘/더보기버튼.png" alt="더보기버튼 아이콘입니다."></a>
+            <a href="#"><img src="./images/icon/더보기버튼.png" alt="더보기버튼 아이콘입니다."></a>
           </div>
         </li>
         <li>
@@ -276,7 +317,7 @@
             <p>나이트 커플권 할인 안내 제휴할인 및 우대 관련 정보</p>
           </div>
           <div>
-            <a href="#"><img src="./images/제작아이콘/더보기버튼.png" alt="더보기버튼 아이콘입니다."></a>
+            <a href="#"><img src="./images/icon/더보기버튼.png" alt="더보기버튼 아이콘입니다."></a>
           </div>
         </li>
         <li>
@@ -287,7 +328,7 @@
           </div>
 
           <div>
-            <a href="#"><img src="./images/제작아이콘/더보기버튼.png" alt="더보기버튼 아이콘입니다."></a>
+            <a href="#"><img src="./images/icon/더보기버튼.png" alt="더보기버튼 아이콘입니다."></a>
           </div>
 
         </li>
@@ -298,7 +339,7 @@
             <p>수중 공연 일정</p>
           </div>
           <div>
-            <a href="#"><img src="./images/제작아이콘/더보기버튼.png" alt="더보기버튼 아이콘입니다."></a>
+            <a href="#"><img src="./images/icon/더보기버튼.png" alt="더보기버튼 아이콘입니다."></a>
           </div>
 
         </li>
@@ -317,7 +358,7 @@
       </ul>
     </div>
     <div class="footer-body flex">
-      <div class="footer-logo"><a href="#"><img src="./images/제작아이콘/coex-logo.png" alt="아쿠아리움 로고입니다"></a></div>
+      <div class="footer-logo"><a href="#"><img src="./images/icon/coex-logo.png" alt="아쿠아리움 로고입니다"></a></div>
       <div class="footer-main">
         <p>서울특별시 강남구 영동대로 513 코엑스 아쿠아리움 TEL:02.700.7200</p>
         <p>/FAX:02.700.7299 / 이메일:aquazigi@naver.com</p>
