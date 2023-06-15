@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+@media all and (min-width:768px) and (max-width:1023px) {
+
+img {
+  width: 200px;
+}
+.flex {
+  display: flex;
+}
+body {
+  margin: 0;
+  list-style: none;
+}
+h3 {
+  margin: 0;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* header */
+header {
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  padding: 20px;
+}
+.menu img {
+  width: 30px;
+  padding: 20px;
+}
+.header-menu,
+.header-btn {
+  display: none;
+}
+.chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.chat a {
+  width: 50px;
+  height: 50px;
+}
+.chat img {
+  width: 50px;
+}
+/* main */
+main .section1 video {
+  width: 100vw;
+  height: 100w;
+}
+main .section2 .white a {
+  min-width: 120px;
+  height: 80px;
+  margin: 10px;
+  padding: 30px;
+}
+main .section2 .gray div {
+  width: 250px;
+}
+
+/******** 여기서부터 걍 모바일 복붙 ********/
+
+.section2 .white a p:nth-child(3) {
+  display: none;
+}
+
+main .section2 .white a h3 {
+  font-size: 1.3rem;
+}
+main .section2 .white a p {
+  font-size: 20px;
+}
+/* .section2 .gray a {
+  border-radius: 20px;
+  margin: 10px auto;
+} */
+.section2 .gray a .flex img {
+  width: 20px;
+}
+.section2 .gray a .flex p {
+  display: none;
+}
+
+/* 섹션2 끝남 */
+main .section2 .white {
+  flex-wrap: nowrap;
+  width: 800px;
+  margin: 0 auto;
+  justify-content: center;
+  font-weight: 500;
+}
+
+main .section2 .white a {
+  border: 2px solid #ddd;
+  margin: 20px;
+  transition: 0.3s;
+  box-shadow: 1px 4px 39px -18px rgba(0, 0, 0, 0.52);
+  background-color: #fff;
+}
+.section2 .white a:nth-child(3) {
+  background-color: #fff;
+}
+/* 백그라운드 컬러 왜안돼!!!!!!!! */
+.section3 .main-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 70px 0;
+}
+.section3 .main-img:nth-child(2) {
+  /* 이미지랑 텍스트 순서 바꿔야함*/
+}
+.section3 .main-img .num2 {
+  padding: 0;
+}
+.section3 .main-img .num3 {
+  padding: 0;
+  padding-bottom: 100px;
+}
+/*  */
+
+.section4 .left img {
+  width: 100px;
+}
+.section4 .left img:nth-child(1) {
+  width: 300px;
+  left: 20px;
+}
+.section4 .left img:nth-child(2) {
+  width: 200px;
+}
+.section4 .left img:nth-child(3) {
+  width: 200px;
+}
+}
