@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 @media all and (min-width:1023px){
+    html {
+        font-family: 'NanumSquare', '맑은고딕', '돋움', sans-serif;
+    }
 img {
   width: 200px;
 }

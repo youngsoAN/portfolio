@@ -1,7 +1,10 @@
 @charset "utf-8";
 
-@media all and (min-width:414px) and (max-width:767px) {
+/* @media all and (min-width:414px) and (max-width:767px) { */
 
+  html {
+    font-family: 'NanumSquare', '맑은고딕', '돋움', sans-serif;
+  }
 .flex {
   display: flex;
 }
@@ -171,36 +174,37 @@ header .chat img {
 .section3 .main-img .img1 img:nth-child(2) {
   position: absolute;
   width: 70px;
-  top: 50px;
-  left: 280px;
+  top: 40px;
+  left: 290px;
   transform: rotate(-7deg);
 }
 .section3 .main-img .img1 img:nth-child(3) {
   position: absolute;
   width: 95px;
-  top: 80px;
-  left: 260px;
+  top: 70px;
+  left: 280px;
   transform: rotate(10deg);
   z-index: 99;
 }
 .section3 .main-img .img1 img:nth-child(4) {
   position: absolute;
-  width: 370px;
-  top: 45px;
-  left: -10px;
+  width: 390px;
+  top: 40px;
+  left: 0;
 }
 .section3 .main-img .img1 img:nth-child(5) {
   width: 200px;
   position: absolute;
-  top: 100px;
-  left: 150px;
+  top: 130px;
+  left: 190px;
   transform: rotate(-8deg);
   z-index: 995;
 }
-.section3 .main-img .txt {
+.section3 .txt {
   display: none;
 }
-.txt-hidden {
+.section3 .main-img .txt-hidden {
+  display: block;
   margin-bottom: 50px;
 }
 .txt-hidden h1 {
@@ -217,7 +221,6 @@ header .chat img {
   font-size: 12px;
   padding-bottom: 10px;
 }
-/* 사이트 바로가기 */
 .section3 {
   margin: 0;
   padding: 10px;
@@ -522,12 +525,12 @@ footer {
   color: #919191;
   padding: 20px;
   padding-bottom: 50px;
+  
 }
-.footer-link {
-  display: none;
-}
+
 .footer-body {
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  /* justify-content: flex-start; */
 }
 .footer-body .footer-logo img {
   width: 100px;
@@ -537,7 +540,7 @@ footer {
   margin-top: 50px;
 }
 .footer-body .footer-main p {
-  font-size: 12px;
+  font-size: 14px;
   padding: 5px;
 }
 .footer-body .my-portpolio a {
@@ -553,8 +556,10 @@ footer {
   left: 0;
   border: 1px solid #919191;
 }
-.footer-body .sns {
+/* .sns {
   position: relative;
   top: -240px;
+} */.footer-link ul{
+  display: none;
 }
-}
+/* } */
