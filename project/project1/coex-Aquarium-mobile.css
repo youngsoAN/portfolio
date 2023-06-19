@@ -1,10 +1,8 @@
 @charset "utf-8";
 
-@media all and (min-width:414px) and (max-width:767px) {
-
-  html {
-    font-family: 'NanumSquare', '맑은고딕', '돋움', sans-serif;
-  }
+html {
+  font-family: "NanumSquare", "맑은고딕", "돋움", sans-serif;
+}
 .flex {
   display: flex;
 }
@@ -218,6 +216,9 @@ header .chat img {
   font-size: 24px;
   font-weight: 500;
   color: #a842cb;
+}
+.txt-hidden h2:nth-child(2) {
+  color: #fb9014;
 }
 .txt-hidden p {
   font-weight: 500;
@@ -529,7 +530,6 @@ footer {
   color: #919191;
   padding: 20px;
   padding-bottom: 50px;
-  
 }
 
 .footer-body {
@@ -564,7 +564,7 @@ footer {
 .sns {
   position: relative;
   top: -240px;
-}.footer-link ul{
-  display: none;
 }
+.footer-link ul {
+  display: none;
 }
