@@ -185,6 +185,10 @@ main .contact .txt a {
   font-weight: bold;
   font-size: 2rem;
   color: #ffbebe;
+  transition: 0.3s;
+}
+main .contact .txt a:hover {
+  color: #c45f75;
 }
 main .contact .txt a:nth-child(3) {
   left: 35%;
