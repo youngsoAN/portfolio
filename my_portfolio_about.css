@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "RixInooAriDuriR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GyeonggiTitleM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.flex {
+  display: flex;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #ffdbdb;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-thumb {
+  height: 10%;
+  background: #ff98ae;
+
+  border-radius: 10px;
+}
+header {
+  font-family: "Cafe24Ssurround", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #221510;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  border-bottom: 3px solid #ffd5a5;
+  transition: 0.3s;
+}
+header h1 {
+  margin: 20px 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header h1:nth-child(2) a {
+  font-size: 1.5rem;
+}
+/* 로고 굴러가게 */
+main a .logo_img {
+  width: 100px;
+  position: fixed;
+  top: 20px;
+  left: calc(50% - 50px);
+  z-index: 9999;
+  animation: rotate_image 10s linear infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* 프로필 */
+.profil {
+  margin: 70px 50px 0;
+  background-color: #fff;
+  border-bottom: 3px solid #ffcbcb;
+  justify-content: space-between;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+}
+.profil_left {
+  margin: 200px 0 0 100px;
+  text-align: left;
+  width: 33%;
+}
+/* keyword */
+.profil_left .profil_txt h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 50px 0 30px 20px;
+}
+.profil_left .profil_txt .keyword {
+  margin: 10px;
+  flex-wrap: wrap;
+}
+.profil_left .profil_txt .keyword h2 {
+  margin: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.profil_left img {
+  width: 300px;
+}
+.profil_center {
+  margin-top: 300px;
+  font-size: 1.8rem;
+  width: 33%;
+  text-align: left;
+  line-height: 1.5;
+}
+.profil_center h1 {
+  width: 100%;
+}
+.profil_right {
+  margin-top: 100px;
+  position: relative;
+  width: 33%;
+}
+.profil_right .main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  z-index: 999;
+  /* position: relative; */
+}
+.profil_right .img_slide1 {
+  width: 200px;
+  height: 406px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  display: flex;
+  overflow: hidden;
+}
+.profil_right .img_slide1 img {
+  width: 200px;
+}
+.profil_right .slide_btn {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+}
+.profil_right .slide_btn li {
+  width: 40px;
+  height: 10px;
+  border-radius: 20px;
+  text-indent: -9999px;
+  background-color: #ffd5a5;
+  margin: 10px;
+  transition: 0.3s;
+}
+.profil_right .slide_btn li:hover {
+  background-color: #ffa2a2;
+}
+
+/* skills */
+.skills {
+  margin: 0 50px;
+  background-color: #fff;
+  padding-bottom: 100px;
+}
+.skills h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 200px 400px 20px;
+}
+
+.skills .skillBox {
+  margin: 10px auto;
+  text-align: left;
+  width: 900px;
+  border-bottom: 2px solid #ffd5a5;
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  align-items: center;
+}
+.skills .skillBox h2 {
+  margin: 70px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.skills .skillBox h2:hover {
+  background: linear-gradient(90deg, #ffd5a5, #ffa2a2);
+  border-radius: 20px;
+}
+.skills .skillBox p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* 슬라이드 텍스트 */
+.viewBox {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #000;
+  margin-top: 100px;
+  overflow: hidden;
+}
+.slideBox {
+  width: 200%;
+  height: 100%;
+  display: flex;
+  animation: flowText 20s linear infinite;
+  border: #db8261 1px solid;
+  padding: 10px;
+  /* background: linear-gradient(to right,#ffbebe,#ffe4b3); */
+  background-color: #ffd5a5;
+}
+.leftBox,
+.rightBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slideItem {
+  font-size: 20px;
+  font-weight: bold;
+  color: #db8261;
+  display: flex;
+  align-items: center;
+}
+.slideItem img {
+  margin-right: 70px;
+  width: 20px;
+  height: 20px;
+}
+@keyframes flowText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* contact */
+main .contact {
+  position: relative;
+}
+main .contact .background {
+  width: 100%;
+  position: relative;
+}
+main .contact .txt h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: #db8261;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+main .contact .txt h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffd5a5;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+main .contact .txt a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ffbebe;
+}
+main .contact .txt a:nth-child(3) {
+  left: 35%;
+}
+main .contact .txt a:nth-child(4) {
+  left: 50%;
+}
+main .contact .txt a:nth-child(5) {
+  left: 60%;
+}
+main .contact img {
+  width: 100px;
+  position: absolute;
+}
+main .contact .img1 {
+  top: 5%;
+  left: 4%;
+  width: 15%;
+  z-index: 99;
+}
+main .contact .img2 {
+  top: 30%;
+  left: 75%;
+  width: 25%;
+}
+main .contact .img3 {
+  top: 20%;
+  left: 85%;
+  width: 10%;
+}
+main .contact .img4 {
+  top: 4%;
+  left: 15%;
+  width: 12%;
+}
+main .contact .img5 {
+  top: 30%;
+  left: 0;
+  width: 15%;
+}
