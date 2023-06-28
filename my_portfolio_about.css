@@ -122,6 +122,8 @@ main a .logo_img {
   width: 33%;
   text-align: left;
   line-height: 1.5;
+  font-family: "GyeonggiTitleM";
+  /*!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 .profil_center h1 {
   width: 100%;
