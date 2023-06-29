@@ -100,11 +100,11 @@ main .container .project h1 {
   transition: 0.4s;
   width: 200px;
   margin: 20px auto;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 main .container .project:hover h1 {
   background-color: #ffefd0c0;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 /******* 흘러가는 글씨 *******/
@@ -165,7 +165,7 @@ main .contact .background {
 main .contact .txt h1 {
   font-weight: bold;
   font-size: 3.5rem;
-  color: #db8261;
+  color: #943c1c;
   position: absolute;
   top: 30%;
   left: 30%;
@@ -173,38 +173,104 @@ main .contact .txt h1 {
 main .contact .txt h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #ffd5a5;
+  color: #b37733;
   position: absolute;
-  top: 40%;
+  top: 42%;
   left: 30%;
 }
-main .contact .txt a {
+main .contact .link {
   position: absolute;
+  display: flex;
   top: 50%;
-  left: 50%;
+  left: 30%;
+}
+main .contact .link a {
+  margin: 10px;
   font-weight: bold;
   font-size: 2rem;
-  color: #ffbebe;
+  color: #854646;
   transition: 0.3s;
 }
 main .contact .txt a:hover {
-  color: #c45f75;
-}
-main .contact .txt a:nth-child(3) {
-  left: 35%;
-}
-main .contact .txt a:nth-child(4) {
-  left: 50%;
-}
-main .contact .txt a:nth-child(5) {
-  left: 60%;
+  color: #d67b8e;
+  font-size: 2.2rem;
 }
 main .contact img {
   width: 100px;
   position: absolute;
 }
+
+main .contact .moving1 {
+  animation: flower1 infinite 3s ease-in-out;
+}
+main .contact .moving2 {
+  animation: flower2 infinite 2s ease-in-out;
+}
+main .contact .moving3 {
+  animation: flower3 infinite 3.2s ease-in-out;
+}
+@keyframes flower1 {
+  0%,
+  100% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateX(0) rotate(5deg);
+  }
+}
+@keyframes flower2 {
+  0%,
+  100% {
+    transform: translateX(-3px) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateX(0) rotate(3deg);
+  }
+}
+@keyframes flower3 {
+  0%,
+  100% {
+    transform: translateX(7px) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateX(0) rotate(7deg);
+  }
+}
+/* 꿀벌 움직이는 이미지 */
+.dance {
+  position: absolute;
+  bottom: 40%;
+  left: 30px;
+  width: 150px;
+  height: 150px;
+  transition: 0.3s;
+  animation: dance infinite 10s ease-in-out;
+}
+@keyframes dance {
+  0% {
+    transform: translateX(40px) translateY(20px);
+  }
+  20% {
+    transform: translateX(80px) translateY(-20px);
+  }
+  40% {
+    transform: translateX(10px) translateY(40px);
+  }
+  60% {
+    transform: translateX(100px) translateY(10px);
+  }
+  80% {
+    transform: translateX(50px) translateY(-10px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
 main .contact .img1 {
-  top: 5%;
+  top: 15%;
   left: 4%;
   width: 15%;
   z-index: 99;
@@ -212,20 +278,20 @@ main .contact .img1 {
 main .contact .img2 {
   top: 30%;
   left: 75%;
-  width: 25%;
+  width: 22%;
 }
 main .contact .img3 {
-  top: 20%;
+  top: 15%;
   left: 85%;
   width: 10%;
 }
 main .contact .img4 {
-  top: 4%;
+  top: 7%;
   left: 15%;
-  width: 12%;
+  width: 9%;
 }
 main .contact .img5 {
-  top: 30%;
+  top: 37%;
   left: 0;
-  width: 15%;
+  width: 12%;
 }

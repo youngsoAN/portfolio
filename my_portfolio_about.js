@@ -10,3 +10,13 @@ $(document).ready(function () {
     }
   });
 });
+
+const dance = document.querySelector(".dance");
+
+document.addEventListener("mousemove", (e) => {
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+
+  dance.style.left = mouseX;
+  dance.style.left = mouseY;
+});

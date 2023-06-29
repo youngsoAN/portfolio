@@ -91,7 +91,6 @@ main a .logo_img {
   justify-content: space-between;
   text-align: center;
   height: 100vh;
-  position: relative;
 }
 .profil_left {
   margin: 200px 0 0 100px;
@@ -99,6 +98,9 @@ main a .logo_img {
   width: 33%;
 }
 /* keyword */
+.profil_left .profil_txt {
+  position: relative;
+}
 .profil_left .profil_txt h1 {
   font-weight: 700;
   font-size: 3rem;
@@ -107,6 +109,15 @@ main a .logo_img {
 .profil_left .profil_txt .keyword {
   margin: 10px;
   flex-wrap: wrap;
+}
+/* 꿀벌 펜 이미지 */
+.profil_left .profil_txt .keyword .pen {
+  width: 120px;
+  position: absolute;
+  top: -70px;
+  left: 500px;
+  transition: 0.3s;
+  transform: rotate(15deg);
 }
 .profil_left .profil_txt .keyword h2 {
   margin: 10px;
@@ -139,7 +150,6 @@ main a .logo_img {
   left: 0;
   width: 400px;
   z-index: 999;
-  /* position: relative; */
 }
 .profil_right .img_slide1 {
   width: 200px;
@@ -179,19 +189,26 @@ main a .logo_img {
   padding-bottom: 100px;
 }
 .skills h1 {
+  text-align: left;
   font-size: 3rem;
   font-weight: bold;
-  padding: 200px 400px 20px;
+  padding: 200px 300px 20px;
 }
 
 .skills .skillBox {
-  margin: 10px auto;
+  margin: 0 auto;
   text-align: left;
   width: 900px;
   border-bottom: 2px solid #ffd5a5;
   display: grid;
-  grid-template-columns: repeat(2, 500px);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  transition: 0.4s;
+}
+.skills .skillBox:hover {
+  background-color: hsla(49, 100%, 86%, 0.719);
+  border-radius: 20px;
+  transform: translateX(20deg);
 }
 .skills .skillBox h2 {
   margin: 70px;
@@ -201,13 +218,13 @@ main a .logo_img {
   border-radius: 20px;
 }
 
-.skills .skillBox h2:hover {
+/* .skills .skillBox h2:hover {
   background: linear-gradient(90deg, #ffd5a5, #ffa2a2);
   border-radius: 20px;
-}
+} */
 .skills .skillBox p {
   font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 /* 슬라이드 텍스트 */
@@ -267,7 +284,7 @@ main .contact .background {
 main .contact .txt h1 {
   font-weight: bold;
   font-size: 3.5rem;
-  color: #db8261;
+  color: #943c1c;
   position: absolute;
   top: 30%;
   left: 30%;
@@ -275,18 +292,27 @@ main .contact .txt h1 {
 main .contact .txt h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #ffd5a5;
+  color: #b37733;
   position: absolute;
-  top: 40%;
+  top: 42%;
   left: 30%;
 }
-main .contact .txt a {
+main .contact .link {
   position: absolute;
+  display: flex;
   top: 50%;
-  left: 50%;
+  left: 30%;
+}
+main .contact .link a {
+  margin: 10px;
   font-weight: bold;
   font-size: 2rem;
-  color: #ffbebe;
+  color: #854646;
+  transition: 0.3s;
+}
+main .contact .link a:hover {
+  color: #d67b8e;
+  font-size: 2.2rem;
 }
 main .contact .txt a:nth-child(3) {
   left: 35%;
@@ -301,8 +327,47 @@ main .contact img {
   width: 100px;
   position: absolute;
 }
+main .contact .moving1 {
+  animation: flower1 infinite 4s ease-in-out;
+}
+main .contact .moving2 {
+  animation: flower2 infinite 2s ease-in-out;
+}
+main .contact .moving3 {
+  animation: flower3 infinite 3s ease-in-out;
+}
+@keyframes flower1 {
+  0%,
+  100% {
+    transform: rotate(-7deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+}
+@keyframes flower2 {
+  0%,
+  100% {
+    transform: translateX(-2px) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateX(0) rotate(3deg);
+  }
+}
+@keyframes flower3 {
+  0%,
+  100% {
+    transform: translateX(2px) rotate(-7deg);
+  }
+
+  50% {
+    transform: translateX(0) rotate(2deg);
+  }
+}
 main .contact .img1 {
-  top: 5%;
+  top: 15%;
   left: 4%;
   width: 15%;
   z-index: 99;
@@ -310,20 +375,20 @@ main .contact .img1 {
 main .contact .img2 {
   top: 30%;
   left: 75%;
-  width: 25%;
+  width: 22%;
 }
 main .contact .img3 {
-  top: 20%;
+  top: 15%;
   left: 85%;
   width: 10%;
 }
 main .contact .img4 {
-  top: 4%;
+  top: 7%;
   left: 15%;
-  width: 12%;
+  width: 9%;
 }
 main .contact .img5 {
-  top: 30%;
+  top: 37%;
   left: 0;
-  width: 15%;
+  width: 12%;
 }
