@@ -1,0 +1,347 @@
+@charset 'utf-8';
+
+@font-face {
+  font-family: "RixInooAriDuriR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GyeonggiTitleM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #ffdbdb;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  /* background-color: #fff; */
+}
+body::-webkit-scrollbar-thumb {
+  height: 10%;
+  background: #ff98ae;
+
+  border-radius: 10px;
+}
+/* header */
+header {
+  font-family: "Cafe24Ssurround", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: #221510;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  border-bottom: 3px solid #ffd5a5;
+  transition: 0.3s;
+}
+header h1,
+header h2 {
+  margin: 20px 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header h1:hover,
+header h2:hover {
+  color: #880303;
+}
+
+/* 로고 굴러가게 */
+main a .logo_img {
+  width: 100px;
+  position: fixed;
+  top: 20px;
+  left: calc(50% - 50px);
+  z-index: 9999;
+  animation: rotate_image 10s linear infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* 로고 굴러가기 끝! */
+
+/* 해피런 */
+main .happyrun1,
+main .happyrun2 {
+  margin: 70px 50px;
+  height: 85vh;
+  margin-bottom: 80px;
+  background-color: #fff;
+}
+
+/* 슬라이드 박스 */
+main .slide_wrapper {
+  width: 80vw;
+  height: 70vh;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+  /* background-color: #7a6363; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+main .slide_wrapper .btn_group {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  display: flex;
+  z-index: 100;
+  cursor: pointer;
+}
+main .happyrun1 .slide_wrapper .btn_group .btn img {
+  width: 90px;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+main .happyrun1 .slide_wrapper .btn_group .btn img:hover {
+  transform: scale(0.95);
+}
+.slide_wrapper .slide_item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* background-color: #fff; */
+  /* position: absolute; */
+  position: relative;
+}
+
+.slide_wrapper .slide_item .slide_img {
+  background: no-repeat 50% / cover;
+  width: 90%;
+  height: 90%;
+  text-indent: -9999px;
+
+  transition: 0.6s ease-in-out;
+  /* transform: translateX(70%); */
+
+  order: 2;
+  /* 포지션으로 오른쪽에 둠 <- 이거 하면 안됨!!!*/
+  /* position: absolute;
+  right: 0; */
+}
+.slide_wrapper .slide_item.active {
+  z-index: 10;
+}
+
+.slide_wrapper .slide_item.active .slide_img {
+  transform: translateX(0);
+}
+
+.slide_wrapper .slide_box1 .slide_img {
+  background-image: url(./images/slide01.PNG);
+  background-size: 800px;
+}
+.slide_wrapper .slide_box2 .slide_img {
+  background-image: url(./images/slide02.PNG);
+}
+
+.slide_wrapper .slide_box3 .slide_img {
+  background-image: url(./images/slide03.PNG);
+}
+
+.slide_wrapper .slide_box4 .slide_img {
+  background-image: url(./images/slide04.PNG);
+}
+.slide_item .text_box_wrapper {
+  margin-left: 30px;
+}
+.slide_item .text_box_wrapper h3 {
+  font-size: 3rem;
+  margin: 30px 0;
+}
+.slide_item .text_box_wrapper h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+.slide_item .text_box_wrapper p {
+  font-size: 1.1rem;
+}
+/* 해피런 끝!! */
+
+/******* 흘러가는 글씨 *******/
+
+.viewBox {
+  width: 100%;
+  height: 80px;
+  /* margin-top: 100px; */
+  overflow: hidden;
+}
+.slideBox {
+  width: 200%;
+  height: 100%;
+  display: flex;
+  animation: flowText 20s linear infinite;
+  border: #db8261 2px solid;
+  border-left: none;
+  border-right: none;
+  padding: 10px;
+  background-color: #ffd5a5;
+}
+.leftBox,
+.rightBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slideItem {
+  font-size: 20px;
+  font-weight: bold;
+  color: #db8261;
+  display: flex;
+  align-items: center;
+}
+.slideItem img {
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes flowText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/*--- 흘러가는 글씨 끝!! ---*/
+
+/* contact */
+main .contact {
+  position: relative;
+  text-align: center;
+  background: url(/imgaes/1x/튤립배경.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 85vh;
+}
+main .contact .txt h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: #943c1c;
+  padding-top: 200px;
+}
+main .contact .txt h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #b37733;
+  padding-top: 50px;
+}
+main .contact .link {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+main .contact .link a {
+  margin: 15px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #854646;
+  transition: 0.3s;
+}
+main .contact .link a:hover {
+  color: #d67b8e;
+  transform: scale(1.1);
+}
+main .contact img {
+  width: 100px;
+  position: absolute;
+}
+main .contact .moving1 {
+  animation: flower1 infinite 4s ease-in-out;
+}
+main .contact .moving2 {
+  animation: flower2 infinite 2s ease-in-out;
+}
+main .contact .moving3 {
+  animation: flower3 infinite 3s ease-in-out;
+}
+@keyframes flower1 {
+  0%,
+  100% {
+    transform: rotate(-7deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+}
+@keyframes flower2 {
+  0%,
+  100% {
+    transform: translateX(-2px) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateX(0) rotate(10deg);
+  }
+}
+@keyframes flower3 {
+  0%,
+  100% {
+    transform: translateX(2px) rotate(-10deg);
+  }
+
+  50% {
+    transform: translateX(0) rotate(5deg);
+  }
+}
+main .contact .img1 {
+  top: 15%;
+  left: 4%;
+  width: 15%;
+  z-index: 99;
+}
+main .contact .img2 {
+  top: 30%;
+  left: 75%;
+  width: 22%;
+}
+main .contact .img3 {
+  top: 15%;
+  left: 85%;
+  width: 10%;
+}
+main .contact .img4 {
+  top: 7%;
+  left: 15%;
+  width: 9%;
+}
+main .contact .img5 {
+  top: 37%;
+  left: 0;
+  width: 12%;
+}
