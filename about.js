@@ -11,12 +11,14 @@ $(document).ready(function () {
   });
 });
 
-const dance = document.querySelector(".dance");
+const moving = (e) => {
+  $(".dance").css({
+    left: e.clientX - 10,
+    top: e.clientY - 10,
+  });
+};
 
-document.addEventListener("mousemove", (e) => {
-  const mouseX = e.clientX;
-  const mouseY = e.clientY;
-
-  dance.style.left = mouseX;
-  dance.style.left = mouseY;
+$(document).on("mousedown", () => {
+  $(document).on("mousemove", moving);
+  $(document).on("mouseup", () => {});
 });

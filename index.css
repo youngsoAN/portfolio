@@ -33,6 +33,10 @@ html {
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
 }
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 body::-webkit-scrollbar {
   width: 15px;
 }
@@ -57,17 +61,22 @@ header {
   border-bottom: 3px solid #ffd5a5;
   transition: 0.3s;
 }
-header h1 {
+header h1,
+header h2 {
   margin: 20px 50px;
   text-transform: uppercase;
   font-weight: bold;
 }
-header h1:nth-child(2) {
-  font-size: 1.5rem;
+header h1:hover,
+header h2:hover {
+  color: #880303;
 }
 main {
   background-color: #ffdbdb;
+  width: 100%;
+  height: 100vh;
 }
+/* 메인페이지 프로젝트 */
 main .container {
   background-color: #fff;
   position: relative;
@@ -92,7 +101,14 @@ main .container .main-logo {
   }
 }
 main .container .project {
-  margin: 100px 200px;
+  margin: 50px 200px;
+}
+main .container .project:nth-child(3),
+main .container .project:nth-child(4) {
+  margin-top: 100px;
+}
+main .container .project img {
+  width: 200px;
 }
 main .container .project h1 {
   font-size: 1.5rem;
@@ -100,19 +116,51 @@ main .container .project h1 {
   transition: 0.4s;
   width: 200px;
   margin: 20px auto;
-  border-radius: 20%;
+  padding: 10px 0;
+  border-radius: 20px;
 }
 main .container .project:hover h1 {
   background-color: #ffefd0c0;
-  border-radius: 20%;
 }
+/* 꿀벌 움직이는 이미지 */
+.dance {
+  position: absolute;
+  bottom: 40%;
+  left: 30px;
+  width: 150px;
+  height: 200px;
+  z-index: 999;
+  /* 애니메이션 없앰 */
+  /* transition: 0.3s; */
+  /* animation: dance infinite 10s ease-in-out; */
+}
+/* @keyframes dance {
+  0% {
+    transform: translateX(150px) translateY(40px);
+  }
+  20% {
+    transform: translateX(300px) translateY(50px);
+  }
+  40% {
+    transform: translateX(200px) translateY(0);
+  }
+  60% {
+    transform: translateX(150px) translateY(-10px);
+  }
+  80% {
+    transform: translateX(70px) translateY(-30px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+} */
+/*--- 꿀벌 움직이는 이미지 끝! ---*/
 
 /******* 흘러가는 글씨 *******/
 
 .viewBox {
   width: 100%;
   height: 80px;
-  border: 1px solid #000;
   margin-top: 100px;
   overflow: hidden;
 }
@@ -121,9 +169,10 @@ main .container .project:hover h1 {
   height: 100%;
   display: flex;
   animation: flowText 20s linear infinite;
-  border: #db8261 1px solid;
+  border: #db8261 2px solid;
+  border-left: none;
+  border-right: none;
   padding: 10px;
-  /* background: linear-gradient(to right,#ffbebe,#ffe4b3); */
   background-color: #ffd5a5;
 }
 .leftBox,
@@ -142,10 +191,10 @@ main .container .project:hover h1 {
   align-items: center;
 }
 .slideItem img {
-  margin-right: 70px;
   width: 20px;
   height: 20px;
 }
+
 @keyframes flowText {
   0% {
     transform: translateX(0);
@@ -154,119 +203,85 @@ main .container .project:hover h1 {
     transform: translateX(-50%);
   }
 }
+/*--- 흘러가는 글씨 끝!! ---*/
+
 /* contact */
 main .contact {
   position: relative;
-}
-main .contact .background {
+  text-align: center;
+  background: url(./imgaes/1x/튤립배경.png) no-repeat 50% / cover;
   width: 100%;
-  position: relative;
+  height: 85vh;
 }
 main .contact .txt h1 {
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: #943c1c;
-  position: absolute;
-  top: 30%;
-  left: 30%;
+  padding-top: 200px;
 }
 main .contact .txt h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #b37733;
-  position: absolute;
-  top: 42%;
-  left: 30%;
+  padding-top: 50px;
 }
 main .contact .link {
-  position: absolute;
+  margin-top: 20px;
   display: flex;
-  top: 50%;
-  left: 30%;
+  justify-content: center;
 }
 main .contact .link a {
-  margin: 10px;
+  margin: 15px;
   font-weight: bold;
   font-size: 2rem;
   color: #854646;
   transition: 0.3s;
 }
-main .contact .txt a:hover {
+main .contact .link a:hover {
   color: #d67b8e;
-  font-size: 2.2rem;
+  transform: scale(1.1);
 }
 main .contact img {
   width: 100px;
   position: absolute;
 }
-
 main .contact .moving1 {
-  animation: flower1 infinite 3s ease-in-out;
+  animation: flower1 infinite 4s ease-in-out;
 }
 main .contact .moving2 {
   animation: flower2 infinite 2s ease-in-out;
 }
 main .contact .moving3 {
-  animation: flower3 infinite 3.2s ease-in-out;
+  animation: flower3 infinite 3s ease-in-out;
 }
 @keyframes flower1 {
   0%,
   100% {
-    transform: translateX(-5px) rotate(-5deg);
+    transform: rotate(-7deg);
   }
 
   50% {
-    transform: translateX(0) rotate(5deg);
+    transform: rotate(5deg);
   }
 }
 @keyframes flower2 {
   0%,
   100% {
-    transform: translateX(-3px) rotate(-5deg);
+    transform: translateX(-2px) rotate(-5deg);
   }
 
   50% {
-    transform: translateX(0) rotate(3deg);
+    transform: translateX(0) rotate(10deg);
   }
 }
 @keyframes flower3 {
   0%,
   100% {
-    transform: translateX(7px) rotate(-5deg);
+    transform: translateX(2px) rotate(-10deg);
   }
 
   50% {
-    transform: translateX(0) rotate(7deg);
-  }
-}
-/* 꿀벌 움직이는 이미지 */
-.dance {
-  position: absolute;
-  bottom: 40%;
-  left: 30px;
-  width: 150px;
-  height: 200px;
-  transition: 0.3s;
-  animation: dance infinite 10s ease-in-out;
-}
-@keyframes dance {
-  0% {
-    transform: translateX(40px) translateY(20px);
-  }
-  20% {
-    transform: translateX(-10px) translateY(-20px);
-  }
-  40% {
-    transform: translateX(10px) translateY(40px);
-  }
-  60% {
-    transform: translateX(100px) translateY(10px);
-  }
-  80% {
-    transform: translateX(50px) translateY(-10px);
-  }
-  100% {
-    transform: translateX(0) translateY(0);
+    transform: translateX(0) rotate(5deg);
   }
 }
 main .contact .img1 {

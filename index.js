@@ -11,3 +11,16 @@ $(document).ready(function () {
   });
 });
 $(".contact").on("scroll", () => {});
+
+// 마우스 따라 움직이는 꿀벌이미지
+const moving = (e) => {
+  $(".dance").css({
+    left: e.clientX - 50,
+    top: e.clientY - 50,
+  });
+};
+
+$(document).on("mousedown", () => {
+  $(document).on("mousemove", moving);
+  $(document).on("mouseup", () => {});
+});
