@@ -160,6 +160,9 @@ main a .logo_img {
   display: flex;
   overflow: hidden;
 }
+.profil_right .img_slide1.slide {
+  transform: translateX(200px);
+}
 .profil_right .img_slide1 img {
   width: 200px;
 }
