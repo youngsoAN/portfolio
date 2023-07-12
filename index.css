@@ -101,7 +101,7 @@ main .container .main-logo {
   }
 }
 main .container .project {
-  margin: 50px 200px;
+  margin: 50px 250px;
 }
 main .container .project:nth-child(3),
 main .container .project:nth-child(4) {
