@@ -183,12 +183,14 @@
     transform: translateX(10px);
   }
 
+  /* 물고기가 떠다니는 설명란 */
   .section3 {
     margin-top: 50px;
     margin: 90px;
   }
   .section3 .main-img {
-    margin: 0;
+    width: 1400px;
+    margin: 0 auto;
   }
   .section3 .txt-hidden {
     display: none;
@@ -206,9 +208,6 @@
   /* 여기서부터 태블릿 복붙 */
   .section3 {
     margin: 30px;
-  }
-  .section3 .txt-hidden {
-    /* display: none; */
   }
   .section3 .main-img {
     display: flex;
@@ -386,7 +385,7 @@
     width: 150px;
     margin: 0 60px;
   }
-  /* 이 위까지 복붙한거임 */
+  /*--- 물고기 떠다니는 색션 끝!! ---*/
   .section4 {
     overflow: hidden;
     background-color: #ddd;
@@ -399,7 +398,6 @@
     width: 30%;
     flex-wrap: wrap;
     align-items: center;
-    position: relative;
     align-content: center;
   }
   .section4 .left img {
@@ -408,19 +406,18 @@
   }
   .section4 .left img:nth-child(1) {
     transform: rotate(90deg);
-    width: 400px;
+    width: 500px;
   }
   .section4 .left img:nth-child(2) {
-    width: 200px;
+    width: 250px;
     position: relative;
     top: 30px;
     left: 100px;
   }
   .section4 .left img:nth-child(3) {
-    width: 400px;
+    width: 500px;
     position: relative;
     top: 100px;
-    left: -40px;
   }
   .section4 .center {
     width: 30%;
@@ -429,15 +426,13 @@
     justify-content: center;
   }
   .section4 .center img {
-    width: 200px;
+    width: 300px;
   }
   .section4 .center img:nth-child(1) {
-    position: relative;
-    top: 70px;
+    margin-top: 200px;
   }
   .section4 .center img:nth-child(2) {
-    position: relative;
-    top: 350px;
+    margin-top: 200px;
   }
   .section4 .right {
     width: 30%;
@@ -445,44 +440,72 @@
     align-content: center;
     justify-content: center;
   }
+  .section4 .right img {
+    width: 250px;
+  }
   .section4 .right img:first-child {
     position: relative;
-    top: -200px;
+    top: -80px;
   }
   .section4 .right img:nth-child(2) {
     position: relative;
-    top: -50px;
-    width: 400px;
+    top: 0;
+    margin-bottom: 100px;
+    width: 500px;
   }
   .section5 {
+    width: 100%;
     background-color: #f8f8f8;
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 100px;
   }
   .section5 .txt {
+    width: 1200px;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     padding: 50px 10px;
   }
+  .section5 .pc {
+    font-size: 1.5rem;
+
+    text-align: left;
+  }
+  .section5 .pc:nth-child(2) {
+    font-size: 1.2rem;
+    width: 1100px;
+    margin: 0 auto;
+  }
   .section5 .txt .arrow-btn {
     align-items: center;
+    font-size: 1.1rem;
   }
   .section5 .txt .arrow-btn img {
-    width: 30px;
+    width: 40px;
     padding-left: 20px;
   }
-  .section5 .pc {
-    text-align: center;
-  }
   .section5 .icon {
-    margin: 30px;
+    width: 1400px;
+    margin: 50px auto;
   }
   .section5 .icon a {
     width: 300px;
     margin: 20px;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+  }
+  .section5 .icon a img {
+    margin-bottom: 10px;
+  }
+  .section5 .icon a p {
+    align-items: flex-end;
+    font-size: 1rem;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
   }
   .section5 .icon .mobile {
     display: none;
@@ -490,6 +513,8 @@
   .section6 {
     background-color: #fff;
     padding: 50px;
+    width: 1400px;
+    margin: 50px auto;
   }
   .section6 .mobile {
     display: none;
@@ -545,7 +570,7 @@
     background-color: #212121;
   }
   .footer-link ul {
-    width: 80%;
+    width: 1000px;
     min-width: 900px;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -553,23 +578,22 @@
   }
   .footer-link ul li {
     margin: 20px;
+    color: #b0b0b0;
   }
   .footer-link ul li a {
     color: #b0b0b0;
-  }
-  .footer-link ul li::after {
-    content: "";
-    width: 100%;
-    margin: 50%;
-    border: 1px solid #b0b0b0;
   }
   .footer-body {
     line-height: 1.5;
     height: 200px;
     align-items: center;
+    justify-content: space-around;
     padding: 30px;
-    justify-content: space-between;
+    margin: 50px;
     color: #b0b0b0;
+  }
+  .footer-body .footer-main {
+    margin-top: 40px;
   }
   .footer-body .footer-main p {
     padding: 5px;
@@ -579,11 +603,15 @@
   }
   .my-portpolio {
     margin-top: 20px;
+  }
+  .sns {
     position: relative;
+    top: -70px;
+    width: 400px;
+    margin-left: 200px;
   }
   .sns a img {
-    width: 30px;
-    position: relative;
-    top: -40px;
+    width: 40px;
+    margin: 5px;
   }
 }
