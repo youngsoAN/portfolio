@@ -244,7 +244,7 @@ main .happyrun1 .slide_wrapper .btn_group .btn img:hover {
 main .contact {
   position: relative;
   text-align: center;
-  background: url(../../imgaes/1x/튤립배경.png) no-repeat 50% / cover;
+  background: url(../../imgaes/피그마배경.png) no-repeat 50% / cover;
   width: 100%;
   height: 85vh;
 }
@@ -267,10 +267,14 @@ main .contact .link {
 }
 main .contact .link a {
   margin: 15px;
+  padding: 10px;
   font-weight: bold;
   font-size: 2rem;
   color: #854646;
   transition: 0.3s;
+  background-color: #fff;
+  border: 1px solid #ffd5a5;
+  border-radius: 20px;
 }
 main .contact .link a:hover {
   color: #d67b8e;
@@ -294,7 +298,6 @@ main .contact .moving3 {
   100% {
     transform: rotate(-7deg);
   }
-
   50% {
     transform: rotate(5deg);
   }
@@ -304,7 +307,6 @@ main .contact .moving3 {
   100% {
     transform: translateX(-2px) rotate(-5deg);
   }
-
   50% {
     transform: translateX(0) rotate(10deg);
   }
@@ -314,7 +316,6 @@ main .contact .moving3 {
   100% {
     transform: translateX(2px) rotate(-10deg);
   }
-
   50% {
     transform: translateX(0) rotate(5deg);
   }
@@ -344,4 +345,27 @@ main .contact .img5 {
   top: 37%;
   left: 0;
   width: 12%;
+}
+/* 튤립움직임 애니메이션 */
+main .contact .tulip-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+}
+main .contact .tulip-wrapper img {
+  position: relative;
+  margin: 10px;
+  animation: tulip infinite 3s;
+  transform-origin: 50% 100%;
+  animation-direction: alternate;
+}
+@keyframes tulip {
+  0% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
 }
