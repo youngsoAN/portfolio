@@ -9,18 +9,19 @@ $(document).ready(function () {
       $("header").css("color", "#000");
     }
   });
-});
-$(".contact").on("scroll", () => {});
 
-// 마우스 따라 움직이는 꿀벌이미지
-const moving = (e) => {
-  $(".dance").css({
-    left: e.clientX - 50,
-    top: e.clientY - 50,
+  $(".contact").on("scroll", () => {});
+
+  // 마우스 따라 움직이는 꿀벌이미지
+  const moving = (e) => {
+    $(".dance").css({
+      left: e.clientX - 40,
+      top: e.clientY - 100,
+    });
+  };
+
+  $(document).on("mousemove", () => {
+    $(document).on("mousemove", moving);
+    $(document).on("mouseup", () => {});
   });
-};
-
-$(document).on("mousedown", () => {
-  $(document).on("mousemove", moving);
-  $(document).on("mouseup", () => {});
 });

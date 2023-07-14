@@ -13,12 +13,22 @@ $(document).ready(function () {
 
 const moving = (e) => {
   $(".dance").css({
-    left: e.clientX - 10,
-    top: e.clientY - 10,
+    left: e.clientX - 40,
+    top: e.clientY - 100,
   });
 };
 
-$(document).on("mousedown", () => {
+$(document).on("mousemove", () => {
   $(document).on("mousemove", moving);
   $(document).on("mouseup", () => {});
+});
+
+$(window).scroll(function () {
+  // if ($(this).scrollTop() > 1000) {
+  //   $(".skillBox").fadeIn(500);
+  //   console.log("페이드인");
+  // } else {
+  //   $(".skillBox").fadeOut(500);
+  //   console.log("페이드아웃");
+  // }
 });
