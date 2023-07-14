@@ -207,9 +207,6 @@
   .section3 {
     margin: 30px;
   }
-  .section3 .txt-hidden {
-    /* display: none; */
-  }
   .section3 .main-img {
     display: flex;
     flex-wrap: wrap;
