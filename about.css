@@ -190,7 +190,7 @@ main a .logo_img {
 
 /* skills */
 .skills {
-  height: 1300px;
+  /* height: 1300px; */
   margin: 0 50px;
   background-color: #fff;
   padding-bottom: 200px;
@@ -209,6 +209,8 @@ main a .logo_img {
   position: absolute;
   top: 40%;
   left: 10%;
+  z-index: 9999;
+  transform: translate(50% -50%);
 }
 .skills .skillBox-scroll {
   /* position: absolute; */
