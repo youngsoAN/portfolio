@@ -13,8 +13,8 @@ $(document).ready(function () {
 
 const moving = (e) => {
   $(".dance").css({
-    left: e.clientX - 40,
-    top: e.clientY - 100,
+    left: e.clientX - 40 + "px",
+    top: e.clientY - 100 + "px",
   });
 };
 
