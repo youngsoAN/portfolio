@@ -228,6 +228,7 @@ main a .logo_img {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   transition: 0.4s;
+  opacity: 0;
 }
 .skills .skillBox:hover {
   background-color: hsla(49, 100%, 86%, 0.719);
