@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "RixInooAriDuriR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GyeonggiTitleM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.flex {
+  display: flex;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #ffdbdb;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  height: 10%;
+  background: #ff98ae;
+
+  border-radius: 10px;
+}
+header {
+  font-family: "Cafe24Ssurround", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: #221510;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  border-bottom: 3px solid #ffd5a5;
+  transition: 0.3s;
+}
+header h1,
+header h2 {
+  margin: 20px 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header h1:hover,
+header h2:hover {
+  color: #880303;
+}
+/* 로고 굴러가게 */
+main a .logo_img {
+  width: 100px;
+  position: fixed;
+  top: 20px;
+  left: calc(50% - 50px);
+  z-index: 9999;
+  animation: rotate_image 10s linear infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 슬라이드 텍스트 */
+.viewBox {
+  width: 100%;
+  height: 80px;
+  margin-top: 100px;
+  overflow: hidden;
+}
+.slideBox {
+  width: 200%;
+  height: 100%;
+  display: flex;
+  animation: flowText 20s linear infinite;
+  border: #db8261 2px solid;
+  border-left: none;
+  border-right: none;
+  padding: 10px;
+  /* background: linear-gradient(to right,#ffbebe,#ffe4b3); */
+  background-color: #ffd5a5;
+}
+.leftBox,
+.rightBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slideItem {
+  font-size: 20px;
+  font-weight: bold;
+  color: #db8261;
+  display: flex;
+  align-items: center;
+}
+.slideItem img {
+  width: 20px;
+  height: 20px;
+}
+@keyframes flowText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/*--- 흘러가는 글씨 끝!! ---*/
+
+/* contact */
+main .contact {
+  position: relative;
+  text-align: center;
+  background: url(./imgaes/피그마배경.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 85vh;
+}
+main .contact .txt h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: #943c1c;
+  padding-top: 230px;
+}
+main .contact .txt h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #b37733;
+  padding-top: 30px;
+}
+main .contact .link {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+main .contact .link a {
+  margin: 15px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #7e3d00;
+  transition: 0.3s;
+  background: #ffc37f;
+  line-height: 42px;
+  border: 3px solid #ffffff9d;
+  border-radius: 30px;
+
+  -webkit-animation: blink 0.7s ease-in-out infinite alternate;
+  -moz-animation: blink 0.7s ease-in-out infinite alternate;
+  animation: blink 0.7s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink {
+  0% {
+    background: #ffe595;
+  }
+  100% {
+    background: #ffd07a;
+  }
+}
+main .contact .link a:hover {
+  color: #000;
+  transform: scale(1.05);
+  background-color: #fff;
+  border: 3px solid #ffd68aa2;
+  animation: none;
+}
+main .contact img {
+  width: 100px;
+  position: absolute;
+}
+main .contact .moving1 {
+  animation: flower1 infinite 4s ease-in-out;
+}
+main .contact .moving2 {
+  animation: flower2 infinite 2s ease-in-out;
+}
+main .contact .moving3 {
+  animation: flower3 infinite 3s ease-in-out;
+}
+@keyframes flower1 {
+  0%,
+  100% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+@keyframes flower2 {
+  0%,
+  100% {
+    transform: translateX(-2px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(0) rotate(10deg);
+  }
+}
+@keyframes flower3 {
+  0%,
+  100% {
+    transform: translateX(2px) rotate(-10deg);
+  }
+  50% {
+    transform: translateX(0) rotate(5deg);
+  }
+}
+main .contact .img1 {
+  top: 15%;
+  left: 4%;
+  width: 15%;
+  z-index: 99;
+}
+main .contact .img2 {
+  top: 30%;
+  left: 75%;
+  width: 22%;
+}
+main .contact .img3 {
+  top: 15%;
+  left: 85%;
+  width: 10%;
+}
+main .contact .img4 {
+  top: 7%;
+  left: 15%;
+  width: 9%;
+}
+main .contact .img5 {
+  top: 37%;
+  left: 0;
+  width: 12%;
+}
+main .contact .tulip-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+}
+main .contact .tulip-wrapper img {
+  position: relative;
+  margin: 10px;
+  animation: tulip infinite 3s;
+  transform-origin: 50% 100%;
+  animation-direction: alternate;
+}
+@keyframes tulip {
+  0% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
