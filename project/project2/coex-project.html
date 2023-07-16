@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project2</title>
+    <!-- favicon -->
+    <link rel="icon" href="./imgaes/favicon.ico/android-icon-192x192.png" />
+    <!-- reset -->
+    <link rel="stylesheet" href="../../common/reset.css" />
+    <!-- header -->
+    <link rel="stylesheet" href="../../header.css" />
+    <!-- coex css -->
+    <link rel="stylesheet" href="./coex-project.css" />
+    <!-- script -->
+    <script src="../../common/jquery-3.7.0.min.js"></script>
+    <script defer src="./coex-project.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="../../index.html">Portfolio</a></h1>
+      <h2><a href="../../about.html">about / say hi</a></h2>
+    </header>
+    <main>
+      <a href="../../index.html">
+        <img class="logo_img" src="../../imgaes/logo.png" alt="로고이미지입니다" />
+      </a>
+      <section class="main-1">
+        <div class="text-box">
+            <h1>프로젝트 목표</h1>
+            <p>미디어 쿼리를 이용한 반응형 웹 만들기</p>
+            <p>반응형 웹의 레이아웃 조절하는 방법 배우기</p>
+        </div>
+        <div class="img-box">
+            <h1>코엑스 아쿠아리움</h1>
+            <div class="screen">
+                <div class="mobile">
+                    <img src="./images/coex-mobile.png" alt="코엑스 아쿠아리움 모바일 임시 화면입니다">
+                </div>
+                <div class="pc">
+                    <img src="./images/coex-tablet.png" alt="코엑스 아쿠아리움 pc 화면입니다">
+                </div>
+                <div class="tablet">
+                   <img src="./images/coex-tablet.png" alt="코엑스 아쿠아리움 태블릿 화면입니다"> 
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="styleGuides">
+        <h1>Style Guides</h1>
+        <div class="point-color">
+          <h2>Point Color</h2>
+          <div class="img">
+            <!-- 컬러칩 넣을 부분 -->
+          </div>
+        </div>
+        <div class="gray-color">
+            <h2>Gray Color</h2>
+        </div>
+        <div class="font">
+            <p>NanumSquareRound</p>
+            <div class="font-size">
+                <p>Aa</p>
+                <p>Aa</p>
+                <p>Aa</p>
+                <p>Aa</p>
+                <p>Aa</p>
+                <p>Aa</p>
+                <p>Aa</p>
+                <p>Aa</p>
+                <p>Aa</p>
+                <p>Aa</p>
+                <p>Aa</p>
+            </div>
+            <div class="font-size">
+                <p>font-size: 40px</p>
+                <p>font-size: 35px</p>
+                <p>font-size: 30px</p>
+                <p>font-size: 28px</p>
+                <p>font-size: 25px</p>
+                <p>font-size: 22px</p>
+                <p>font-size: 18px</p>
+                <p>font-size: 16px</p>
+                <p>font-size: 14px</p>
+                <p>font-size: 12px</p>
+            </div>
+        </div>
+        <section class="publishing">
+            <p>position과 flex, grid 등 레이아웃 조절</p>
+            <h3>미디어 쿼리</h3>
+            <p>모바일 우선</p>
+            <p>태블릿, 웹 순서로 각 크기별 구조에 맞는 요소 배치 고려</p>
+            <p>@media screen and (min-width:414px){}</p>
+            <h3>github</h3>
+            <p>버전 관리와 html, css의 코드공유, pages를 사용해 작업 결과물 구현</p>
+        </section>
+        <section class="problem">
+            <h1>Problem & Resolve</h1>
+            <h2>pc와 mobil의 내용이 다르다!</h2>
+            <h2>-해결법-</h2>
+            <p>! 모바일은 pc버전의 화면과 다르게 크기에 따라 숨겨지는 글들이 있다 !
+이때 span, strong 등을 사용해서 p사이에 class나 id 값을 주고 css에서 display: none 또는 display: block을 사용해 보이거나 숨겼다.</p>
+<h2>크기가 고정된 구조의 화면과 다르게 반응형 웹은 각 화면 크기 버전에 따라 
+html 관리가 필요하다!</h2>
+<p>(px로 사이즈를 조절하면 grid나 flex, position의 레이아웃이 흘러넘칠때가 있다.)</p>
+<h2>- 해결법 -</h2>
+<h2>크기 고정값이 방해되는 부분을 %로 변경</h2>
+<p>색션과 이미지를 %와 px을 섞어가며 배치,
+min-width, max-width를 사용해 일정 이상 커지지 않게 관리하여 흘러넘침 해결 
+position로 고정이 필요한 부분에 적용</p>
+<p>-> 반응형임을 고려해 html 문서 시작부터 작성하고 좀 더 효율적이고 짧은 코드로 관리할 수 있는 방법을 찾아 다음 프로젝트에서 적용해 볼 예정</p>
+        </section>
+      </section>
+      <!-- 흘러가는 글자 -->
+      <section class="viewBox">
+            <div class="slideBox">
+                <div class="leftBox">
+                    <div class="slideItem"><img src="../../imgaes/slideText-sc.png" alt=""></div>
+                    <div class="slideItem">Let’s work together!</div>
+                    <div class="slideItem"><img src="../../imgaes/slideText-sc.png" alt=""></div>
+                    <div class="slideItem">I'm always ready to work happily
+                        and happily</div>
+                    <div class="slideItem"><img src="../../imgaes/slideText-sc.png" alt=""></div>
+                    <div class="slideItem">Let’s work together!</div>
+                    <div class="slideItem"><img src="../../imgaes/slideText-sc.png" alt=""></div>
+                    <div class="slideItem">I'm always ready to work happily
+                        and happily</div>
+
+                </div>
+                <div class="rightBox">
+                    <div class="slideItem"><img src="../../imgaes/slideText-sc.png" alt=""></div>
+                    <div class="slideItem">Let’s work together!</div>
+                    <div class="slideItem"><img src="../../imgaes/slideText-sc.png" alt=""></div>
+                    <div class="slideItem">I'm always ready to work happily
+                        and happily</div>
+                    <div class="slideItem"><img src="../../imgaes/slideText-sc.png" alt=""></div>
+                    <div class="slideItem">Let’s work together!</div>
+                    <div class="slideItem"><img src="../../imgaes/slideText-sc.png" alt=""></div>
+                    <div class="slideItem">I'm always ready to work happily
+                        and happily</div>
+                </div>
+            </div>
+        </section>
+      <section class="contact">
+            <!-- <img class="background" src="../../imgaes/1x/튤립배경.png" alt="노란색의 체크무늬 배경입니다."> -->
+            <div class="txt">
+                <h1>Let's work together!</h1>
+                <h2>You can contact me through Linkedln</h2>
+                <div class="link">
+                    <a href="#">Instagram</a>
+                    <a href="mailto:" whirosa@naver.com">whirosa@naver.com</a>
+                    <a href="https://github.com/youngsoAN" target="_blank">Github</a>
+                </div>
+
+            </div>
+
+
+            <img class="img1 moving1" src="../../SVG/yellow-f.svg" alt="노란색 꽃입니다.">
+            <img class="img2 moving1" src="../../SVG/yellow-f1.svg" alt="노란색 꽃입니다">
+            <img class="img3 moving2" src="../../SVG/y-flower1.svg" alt="아이보리 노란색의 꽃입니다">
+            <img class="img4 moving3" src="../../SVG/white-f.svg" alt="하얀 꽃입니다">
+            <img class="img5 moving2" src="../../SVG/white-f.svg" alt="하얀 꽃입니다">
+            <div class="tulip-wrapper">
+                <img src="../../SVG/tulip-1.svg" alt="분홍색 튤립입니다">
+                <img src="../../SVG/tulip-2.svg" alt="빨간색 튤립입니다">
+                <img src="../../SVG/tulip-3.svg" alt="노랑색 튤립입니다">
+                <img src="../../SVG/tulip-4.svg" alt="주황색 튤립입니다">
+                <img src="../../SVG/tulip-1.svg" alt="분홍색 튤립입니다">
+                <img src="../../SVG/tulip-2.svg" alt="빨간색 튤립입니다">
+                <img src="../../SVG/tulip-3.svg" alt="노랑색 튤립입니다">
+                <img src="../../SVG/tulip-4.svg" alt="주황색 튤립입니다">
+                <img src="../../SVG/tulip-1.svg" alt="분홍색 튤립입니다">
+                <img src="../../SVG/tulip-2.svg" alt="빨간색 튤립입니다">
+                <img src="../../SVG/tulip-3.svg" alt="노랑색 튤립입니다">
+                <img src="../../SVG/tulip-4.svg" alt="주황색 튤립입니다">
+                <img src="../../SVG/tulip-1.svg" alt="분홍색 튤립입니다">
+                <img src="../../SVG/tulip-2.svg" alt="빨간색 튤립입니다">
+                <img src="../../SVG/tulip-3.svg" alt="노랑색 튤립입니다">
+                <img src="../../SVG/tulip-4.svg" alt="주황색 튤립입니다">
+            </div>
+        </section>
+    </main>
+  </body>
+</html>
