@@ -10,7 +10,7 @@ section {
 /* h1 기본 스타일 */
 section h1 {
   font-size: 3rem;
-  padding: 70px;
+  /* padding: 70px; */
   font-weight: bold;
 }
 .main-1 {
