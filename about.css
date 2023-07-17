@@ -91,15 +91,15 @@ main a .logo_img {
 }
 /* 프로필 */
 .profil {
-  margin: 70px 50px 0;
+  margin: 70px 50px;
   background-color: #fff;
-  border-bottom: 3px solid #ffcbcb;
+  /* border-bottom: 10px solid #ffdbdb; */
   justify-content: space-between;
   text-align: center;
-  height: 100vh;
+  height: 90vh;
 }
 .profil_left {
-  margin: 200px 0 0 100px;
+  margin: 200px 50px 50px 100px;
   text-align: left;
   width: 33%;
 }
@@ -109,8 +109,8 @@ main a .logo_img {
 }
 .profil_left .profil_txt h1 {
   font-weight: 700;
-  font-size: 3rem;
-  margin: 50px 0 30px 20px;
+  font-size: 4rem;
+  margin: 70px 0 70px 20px;
 }
 .profil_left .profil_txt .keyword {
   margin: 10px;
@@ -120,9 +120,8 @@ main a .logo_img {
 .profil_left .profil_txt .keyword .pen {
   width: 120px;
   position: absolute;
-  top: -70px;
-  left: 500px;
-  transition: 0.3s;
+  top: -50px;
+  left: 730px;
   transform: rotate(15deg);
 }
 .profil_left .profil_txt .keyword h2 {
@@ -134,7 +133,7 @@ main a .logo_img {
   width: 300px;
 }
 .profil_center {
-  margin-top: 300px;
+  margin-top: 330px;
   font-size: 1.8rem;
   width: 33%;
   text-align: left;
@@ -146,7 +145,7 @@ main a .logo_img {
   width: 100%;
 }
 .profil_right {
-  margin-top: 100px;
+  margin-top: 30px;
   position: relative;
   width: 33%;
 }
@@ -210,15 +209,9 @@ main a .logo_img {
   top: 40%;
   left: 10%;
   z-index: 9999;
-  transform: translate(50% -50%);
+  /* transform: translate(50% -50%); */
 }
-.skills .skillBox-scroll {
-  /* position: absolute; */
-  /* opacity: 0; */
-  /* transform: translateX(0px) translateY(0px);
-  transition: opacity 750ms ease 0s,
-    transform 750ms cubic-bezier(0.215, 0.61, 0.355, 1) 0s; */
-}
+
 .skills .skillBox-scroll .skillBox {
   margin: 0 auto;
   text-align: left;
