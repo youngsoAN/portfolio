@@ -1,35 +1,50 @@
 @charset 'utf-8';
 
-.main-1 {
-  margin: 70px auto;
-  width: 90%;
-  height: 50vh;
+/* 색션 스타일 */
+section {
   background-color: #fff;
+  width: 90%;
+  margin: 70px auto;
+  padding: 50px;
+}
+/* h1 기본 스타일 */
+section h1 {
+  font-size: 3rem;
+  padding: 70px;
+  font-weight: bold;
+}
+.main-1 {
+  height: 70vh;
   display: flex;
 }
 .main-1 .text-box {
   width: 50%;
   margin: 50px;
 }
-.main-1 .text-box h1 {
-  font-size: 2rem;
-  margin: 30px 0;
-  font-weight: bold;
-}
 .main-1 .text-box p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  margin: 30px 50px;
+}
+.main-1 .text-box p:nth-child(2) {
+  /* background: url(./images/underline.png) no-repeat 0 / contain;
+  background-size: 400px; */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #fffaae 50%);
+  width: 400px;
+}
+.main-1 .text-box p:nth-child(3) {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #fff7ae 50%);
+  width: 420px;
 }
 .main-1 .img-box {
   display: flex;
   flex-direction: column;
   width: 50%;
+  margin: 50px;
 }
 .main-1 .img-box h1 {
-  font-size: 2rem;
-  margin: 30px;
-  font-weight: bold;
   text-align: center;
+  font-size: 2rem;
 }
 .main-1 .img-box .screen {
   position: relative;
@@ -38,10 +53,10 @@
 }
 .main-1 .img-box .screen .mobile {
   position: absolute;
-  top: 50px;
-  left: -80px;
-  width: 150px;
-  height: 300px;
+  top: 0;
+  left: -140px;
+  width: 180px;
+  height: 350px;
   border-radius: 25px;
   overflow: hidden;
   z-index: 999;
@@ -49,20 +64,20 @@
 }
 .main-1 .img-box .screen .pc {
   position: absolute;
-  top: 70px;
-  left: 50px;
-  width: 400px;
-  height: 250px;
-  border-radius: 5px;
+  top: -20px;
+  left: 0;
+  width: 590px;
+  height: 300px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 .main-1 .img-box .screen .tablet {
   position: absolute;
   top: 40px;
-  left: 300px;
-  width: 300px;
-  height: 250px;
+  left: 400px;
+  width: 400px;
+  height: 300px;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -70,8 +85,34 @@
 
 /* 스타일 가이드 시작! */
 .styleGuides {
-  background-color: #fff;
-  width: 90%;
   height: 100%;
-  margin: 0 auto;
+}
+.styleGuides .flex {
+  display: flex;
+  /* justify-content: space-around; */
+}
+.styleGuides h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 20px;
+}
+.styleGuides img {
+  width: 300px;
+  margin: 20px;
+}
+/* 퍼블리싱 */
+.publishing {
+}
+.review {
+  height: 50vh;
+}
+.review p {
+  margin: 10px 50px;
+}
+
+/* 색션 뷰박스, 컨택트 마진값 없애기 */
+.contact,
+.viewBox {
+  margin: 0;
+  padding: 0;
 }
