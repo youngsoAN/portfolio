@@ -173,6 +173,20 @@
   .section3 .main-img .img1 img:nth-child(1) {
     width: 300px;
   }
+  .section3 .main-img .img1 img:nth-child(1) {
+    animation: updown1 5s infinite;
+  }
+  @keyframes updown1 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
   .section3 .main-img .img1 img:nth-child(2) {
     position: absolute;
     width: 70px;
@@ -254,6 +268,7 @@
     top: 0;
     right: 0;
     width: 300px;
+    animation: updown1 5s infinite;
     /* M */
   }
   .section3 .main-img .img2 img:nth-child(2) {
@@ -310,6 +325,7 @@
     top: 0;
     left: 0;
     width: 300px;
+    animation: updown1 5s infinite;
   }
   .section3 .main-img .img3 img:nth-child(2) {
     position: absolute;
@@ -335,6 +351,16 @@
     width: 100px;
   }
 
+  /* 스크립트 들어갈 클래스 */
+  .section3 .txt-hidden .transformY {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 1s;
+  }
+  .section3 .txt-hidden .transformY.change {
+    transform: translateY(0);
+    opacity: 1;
+  }
   .section4 {
     overflow: hidden;
     background-color: #ddd;
@@ -426,12 +452,17 @@
   }
   .section5 .txt {
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: space-around;
     padding: 10px;
     padding: 50px 10px;
   }
+  .section5 .txt .pc:nth-child(1) {
+    display: block;
+  }
   .section5 .txt h2 {
     font-size: 15px;
+    font-weight: 600;
   }
   .section5 .txt .arrow-btn {
     font-size: 5px;
@@ -506,7 +537,7 @@
   .section6 .mobile li {
     width: 95%;
     margin: 0 auto;
-    height: 50px;
+    /* height: 50px; */
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
     justify-content: space-between;
