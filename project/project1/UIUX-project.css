@@ -18,6 +18,8 @@ body::-webkit-scrollbar-thumb {
 }
 main {
   background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
 }
 /* 색션 크기 고정값 */
 section {
@@ -30,9 +32,9 @@ h1 {
   font-size: 2.5rem;
   font-weight: 700;
 }
-h2 [
+h2 {
   font-weight: 500;
-]
+}
 
 /***** 작업 시작! *****/
 
