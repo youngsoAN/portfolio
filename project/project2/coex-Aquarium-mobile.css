@@ -235,6 +235,9 @@
     font-weight: 500;
     color: #a842cb;
   }
+  .main-img:nth-child(2) .txt-hidden h2 {
+    color: #f87201;
+  }
   .txt-hidden p {
     font-weight: 500;
     font-size: 12px;
