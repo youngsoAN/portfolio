@@ -107,12 +107,12 @@
       </div>
     </section>
     <section class="ux-vision">
-      <div class="box">
+      <div class="box flex">
         <h1>UX Vision</h1>
         <h2><strong>직관적인 디자인</strong><br><strong>편리한 사용</strong>과 <strong>기록기능</strong>에 집중</h2>
       </div>
     </section>
-    <section class="asis-tobe">
+    <section class="asis-tobe flex">
       <div class="asis">
         <h1>AS IS</h1>
         <ul>
@@ -120,8 +120,9 @@
             <h3>화면 레이아웃 분할</h3>
           </li>
           <li>
-            단조롭고 딱딱한 디자인,텍스트와 아이콘이 작고 레이아웃이 정확히 나뉘지 않아 가독성이 떨어짐
+            단조롭고 딱딱한 디자인,<br>텍스트와 아이콘이 작고<br> 레이아웃이 정확히 나뉘지 않아<br> 가독성이 떨어짐
           </li>
+          <li>배경색과 글자색의 명도와 채도 보완이 필요함</li>
           <li>
             <h3>지속적인 동기부여 요소 부족</h3>
           </li>
@@ -132,40 +133,49 @@
         <h1>TO BE</h1>
         <ul>
           <li>
-            <h3>적절한 크기의 레이아웃과 폰트 사이즈, 아이콘에 포인트 컬러 반영</h3>
+            <h3>적절한 크기의 레이아웃과<br>폰트 사이즈, 아이콘에<br>포인트 컬러 반영</h3>
           </li>
           <li>
-            러닝 도중에도 바로 확인이 가능할 정도의 직관적인 요소 크기와 레이아웃 디자인
+            러닝 도중에도 바로 확인이 가능할 정도의 <br>직관적인 요소 크기와 레이아웃 디자인
           </li>
-          <li>→ 텍스트와 아이콘 크기를 키우고 시각을 사로잡는 확실한 포인트 컬러를 사용</li>
+          <li>→ 텍스트와 아이콘 크기를 키우고 시각을 <br>사로잡는 확실한 포인트 컬러를 사용</li>
           <li>
             <h3>기록 달성 만족 유도</h3>
           </li>
-          <li>기간별 기록 그래프에 단계별 축하 메시지와 스템프 증정</li>
+          <li>기간별 기록 그래프에 단계별 축하 메시지와<br> 스템프 증정</li>
           <li>→ 칭찬 레벨에 따라 사용자의 성취감 달성 및 성취의욕 유발</li>
         </ul>
       </div>
     </section>
     <section class="styleguides">
       <h1>Style Guides</h1>
-      <div class="keyword">
-        <h2>Keyword</h2>
-        <ul>
-          <li>#직관적인</li>
-          <li>#단순함</li>
-          <li>#가시성</li>
-        </ul>
-        <p>순간적으로 정보를 읽기 위해 <strong>어두운 배경</strong>과 <strong>밝은 그라데이션 컬러</strong>를 사용하여 <strong>네온 조명 느낌</strong>을 주면서
-          20~30대 여성 타깃에 맞춰 핑크색과 민트색을 조합</p>
-      </div>
-      <div class="color">
-        <h2>Color</h2>
-        <!-- 컬러 이미지 3개 들어갈 곳 -->
+      <div class="flex">
+        <div class="keyword">
+          <h2>Keyword</h2>
+          <ul class="flex">
+            <li>#직관적인</li>
+            <li>#단순함</li>
+            <li>#가시성</li>
+          </ul>
+          <p>순간적으로 정보를 읽기 위해 <strong>어두운 배경</strong>과 <strong>밝은 그라데이션 컬러</strong>를 사용하여<strong><br>네온 조명 느낌</strong>을
+            주면서
+            20~30대 여성 타깃에 맞춰 핑크색과 민트색을 조합했습니다.</p>
+
+        </div>
+        <div class="color">
+          <h2>Color</h2>
+          <!-- 컬러 이미지 3개 들어갈 곳 -->
+          <ul class="flex">
+            <img src="./images/color-p.png" alt="해피런에 사용된 컬러 #FF02C7 입니다">
+            <img src="./images/color-m.png" alt="해피런에 사용된 컬러 #36FFDB 입니다">
+            <img src="./images/color-b.png" alt="해피런에 사용된 컬러 #112055 입니다">
+          </ul>
+        </div>
       </div>
       <div class="font">
         <h2>Font</h2>
-        <div class="left">
-          <ul>
+        <div class="flex">
+          <ul class="left">
             <li>
               <p>Spoqa Han Sans Neo Bold</p>
               <p>해피런과</p>
@@ -182,22 +192,20 @@
               <p>Spoqa Han Sans Neo Light</p>
               <p>달리기</p>
             </li>
+            <p>그래프 등 화면에 숫자가 많이 쓰여 <br><strong>숫자를 커스텀 한 '스포카 한 산스'</strong> 서체를 사용</p>
           </ul>
-          <p>그래프 등 화면에 숫자가 많이 쓰여 <strong>숫자를 커스텀 한 '스포카 한 산스'</strong> 서체를 사용</p>
-        </div>
-        <div class="right">
-          <ul>
+          <ul class="right">
             <li>
               <p>Sora</p>
-              <p>Bold</p>
+              <p>Extra Bold</p>
             </li>
             <li>
               <p>Sora</p>
               <p>Semibold</p>
             </li>
+            <p class="bold">365</p>
+            <p>한눈에 잘 보여야 하는 중요한 정보는 <br><strong>굵고 가시성이 좋은'Sora'</strong> 서체를 사용</p>
           </ul>
-          <p class="bold">365</p>
-          <p>한눈에 잘 보여야 하는 중요한 정보는 <strong>굵고 가시성이 좋은'Sora'</strong> 서체를 사용</p>
         </div>
       </div>
     </section>
@@ -256,7 +264,7 @@
 
   <footer>
 
-  <!-- 흘러가는 글자 -->
+    <!-- 흘러가는 글자 -->
     <section class="viewBox">
       <div class="slideBox">
         <div class="leftBox">
