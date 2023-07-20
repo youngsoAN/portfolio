@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+/* font */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+
 :root {
   /* font size */
   --h1-size: 3rem;
@@ -17,6 +20,7 @@
 }
 html {
   background-color: var(--color-main);
+  font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
 }
 body {
   overflow-x: hidden;
@@ -143,6 +147,7 @@ section {
   align-items: center;
   width: 1200px;
   margin: 0 auto;
+  margin-top: 100px;
 }
 .timeline ul li {
   margin: 0 10px;
@@ -167,7 +172,7 @@ section {
   width: 80%;
   height: 100%;
   margin: 100px auto;
-  margin-top: 400px;
+  margin-top: 300px;
 }
 .swot h1 {
   text-align: right;
@@ -345,6 +350,7 @@ section {
   margin: 30px;
   font-size: 1.3rem;
 }
+
 /* li 굵기 조정 */
 .styleguides .font .left li:nth-child(1) {
   font-weight: 900;
@@ -362,9 +368,17 @@ section {
   text-align: left;
   width: 100px; /* li 안에 글자끼리 떨어져 보이게 넣은것 */
 }
-.styleguides .font ul p:last-child {
+.styleguides .font .left li:last-child {
+  margin-top: 90px;
+}
+.styleguides .font ul li:last-child {
   text-align: center;
   font-size: 1.2rem;
+  width: 430px;
+  margin-top: 50px;
+}
+.styleguides .font ul p {
+  line-height: 2;
 }
 .styleguides .font ul p strong {
   font-size: 1.5rem;
@@ -373,13 +387,32 @@ section {
   font-size: 2rem;
   font-weight: 900;
 }
-.styleguides .font .right li:nth-child(2) p {
-  font-size: 2rem;
+.styleguides .font .right li:nth-child(3) {
   font-weight: 700;
+  justify-content: flex-end;
+}
+.styleguides .font .right li:last-child {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 430px;
+  flex-direction: column;
+}
+
+/* .styleguides .font .right li:last-child {
+  text-align: center;
+  font-size: 1.2rem;
+  /* width: 430px; 
+}*/
+.styleguides .font .right li:nth-child(2) p {
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 .styleguides .font .right li p:nth-child(2) {
   text-align: left;
   width: 200px; /* li 안에 글자끼리 떨어져 보이게 넣은것 */
+}
+.styleguides .font .right li:last-child {
+  text-align: center;
 }
 .styleguides .font .right .bold {
   font-size: 4.5rem;
@@ -387,6 +420,17 @@ section {
   color: #999;
   font-weight: 700;
   padding-right: 50px;
+}
+.styleguides .font .right li:last-child {
+  width: 430px;
+  margin: 0;
+}
+.styleguides .font .right li:last-child p:last-child {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.styleguides .font .right li:last-child p:last-child strong {
+  font-size: 1.5rem;
 }
 
 /* 와이어프레임 워크플로우 */
@@ -489,7 +533,7 @@ section {
 }
 .review p {
   width: 100%;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 .review span p {
   margin-top: 10px;
