@@ -51,9 +51,9 @@ section {
 
 .happyrun-h {
   width: 1100px;
+  height: 75vh;
   margin: 70px auto;
-  padding: 70px 0;
-  /* padding-top: 100px; */
+  margin-bottom: 170px;
   justify-content: space-evenly;
   align-items: center;
   /* 뭐야 이거 왜 안먹어 */
@@ -443,12 +443,13 @@ section {
   font-size: var(--h1-size);
   font-weight: var(--h1-weight);
   margin: 150px 70px;
+  margin-bottom: 80px;
 }
 .wireframe img {
   width: 70%;
   height: 100%;
   display: block;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
 /***** 프로토 타입 *****/
@@ -474,7 +475,7 @@ section {
   margin: 50px;
 }
 .prototype .box:nth-child(3) .flex img {
-  width: 600px;
+  width: 550px;
 }
 .prototype .box:nth-child(3) .flex .flex {
   flex-wrap: wrap;
@@ -552,14 +553,14 @@ main a {
   text-align: center;
   border-radius: 50px 0 0 50px;
   background: linear-gradient(to right, #a1bbf5, #fff, #fff);
-  color: #fff;
+  color: #4e75af;
   font-size: 1.7rem;
   font-weight: 700;
 
   transition: 0.4s;
   /*!! 인터넷 긁어온거 !!*/
   background-size: 200% auto;
-  color: white;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 main a:hover {
   background-position: right center;
@@ -571,4 +572,5 @@ main a:hover {
     #a6c1ee 51%,
     #fff 100%
   );
+  color: #fff;
 }
