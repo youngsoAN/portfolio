@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #ace3e3;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  height: 10%;
+  background: #328080;
+
+  border-radius: 10px;
+}
+main {
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+/* 시작! */
+.main-header {
+  margin: 70px auto;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+.main-header .img-box {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 700;
+  margin-right: 100px;
+}
+.main-header .txt-box h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 50px 0;
+}
+.main-header .txt-box p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.main-header .txt-box ul li {
+  text-align: center;
+  font-weight: 600;
+  margin: 20px 10px;
+  width: 100px;
+  height: 100%;
+  background-color: #bfeff7;
+  border-radius: 20px;
+  padding: 10px;
+}
+.overview {
+  margin: 70px auto;
+}
+.overview h1 {
+  margin: 70px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.overview .overview-wrapper {
+  margin: 0 70px;
+  justify-content: center;
+}
+.overview .overview-wrapper .txt-box {
+  margin-right: 50px;
+}
+.overview .overview-wrapper .txt-box h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 50px 0;
+}
+.overview .overview-wrapper p {
+  margin: 15px 0;
+}
+.overview .overview-wrapper p .color-m {
+  color: #1e9999;
+}
+.overview .overview-wrapper p .color-o {
+  color: #bd6620;
+}
+.timeline {
+  margin: 70px;
+  position: relative;
+}
+.timeline h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.timeline .dog_car {
+  position: absolute;
+  width: 150px;
+  top: -10px;
+  left: 250px;
+}
+.timeline ul {
+  margin: 100px 0;
+  justify-content: center;
+  align-items: center;
+}
+.timeline ul li {
+  color: #444;
+}
+.timeline ul li:first-child,
+.timeline ul li:last-child {
+  color: #1a5858;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.timeline ul li img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+/* asis tobe */
+.asis-tobe {
+  margin: 70px;
+  display: flex;
+  justify-content: center;
+}
+.asis-tobe div h1 {
+  font-size: 2.5rem;
+  color: #328080;
+  font-weight: bold;
+  text-align: center;
+}
+.asis-tobe .box {
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 50px;
+  margin: 20px;
+  width: 400px;
+  height: 450px;
+}
+.asis-tobe .box h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.asis-tobe .box p {
+  margin: 30px 0;
+  line-height: 2;
+}
+
+/* 마이파트 시작 */
+.my-part {
+  width: 100%;
+  position: relative;
+  margin: 100px 0;
+}
+.my-part h1 {
+  margin: 70px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.my-part img:nth-child(2) {
+  position: absolute;
+  bottom: -10px;
+  right: 50px;
+  width: 200px;
+  transition: 0.3s;
+  animation: twinkle 0.7s infinite;
+}
+@keyframes twinkle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.my-part img:nth-child(3) {
+  display: block;
+  width: 1200px;
+  /* height: 100%; */
+  margin: 70px auto;
+}
+.my-part img:nth-child(4) {
+  position: absolute;
+  right: 100px;
+  bottom: -150px;
+  width: 300px;
+}
