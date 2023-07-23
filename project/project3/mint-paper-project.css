@@ -102,7 +102,20 @@ main {
   position: absolute;
   width: 150px;
   top: -10px;
-  left: 250px;
+  left: 1000px;
+  transition: 0.3s;
+  animation: dogcar 8s infinite ease-in-out;
+}
+@keyframes dogcar {
+  0% {
+    transform: translateX(-800px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(400px);
+    opacity: 1;
+  }
 }
 .timeline ul {
   margin: 100px 0;
@@ -193,4 +206,87 @@ main {
   right: 100px;
   bottom: -150px;
   width: 300px;
+}
+
+/* 스타일가이드 시작! */
+.styleguides {
+  margin: 70px;
+}
+.styleguides h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 70px 0;
+}
+.styleguides .center {
+  justify-content: center;
+}
+.styleguides .keyword {
+  justify-content: center;
+  /* align-items: center; */
+}
+.styleguides .keyword h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.styleguides .keyword ul li {
+  margin: 40px 10px;
+  width: 100px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 10px;
+}
+.styleguides .keyword p {
+  margin: 0 10px;
+  line-height: 1.5;
+}
+.styleguides .color {
+  margin-left: 70px;
+}
+.styleguides .color h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.styleguides .color ul {
+  flex-direction: row;
+}
+.styleguides .color ul li {
+  margin: 30px 10px;
+}
+.styleguides .font {
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  background: url(./images/font-img.png) no-repeat 50%;
+  background-position: 700px 200px;
+}
+.styleguides .font .left ul li {
+  display: flex;
+  margin: 20px;
+}
+.styleguides .font .left ul li p {
+  margin: 0 10px;
+}
+.styleguides .font .right {
+  flex-direction: column;
+}
+
+/* prototype */
+.prototype {
+  margin: 70px;
+}
+.prototype h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 70px 0;
+}
+.prototype .box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prototype .box img {
+  width: 900px;
+  margin: 100px 20px;
 }
