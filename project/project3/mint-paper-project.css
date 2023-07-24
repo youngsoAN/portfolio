@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+html {
+  background-color: #ace3e3;
+}
 body {
   overflow-x: hidden;
   overflow-y: auto;
@@ -25,12 +28,15 @@ main {
 .flex {
   display: flex;
 }
+header {
+  background-color: #ace3e3;
+}
 /* 시작! */
 .main-header {
   margin: 70px auto;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  padding: 150px 0;
 }
 .main-header .img-box {
   flex-direction: column;
@@ -55,7 +61,7 @@ main {
   text-align: center;
   font-weight: 600;
   margin: 20px 10px;
-  width: 100px;
+  width: 120px;
   height: 100%;
   background-color: #bfeff7;
   border-radius: 20px;
@@ -65,7 +71,7 @@ main {
   margin: 70px auto;
 }
 .overview h1 {
-  margin: 70px;
+  margin: 100px 70px;
   font-size: 3rem;
   font-weight: bold;
 }
@@ -90,8 +96,11 @@ main {
 .overview .overview-wrapper p .color-o {
   color: #bd6620;
 }
+.overview img {
+  margin: 0 50px;
+}
 .timeline {
-  margin: 70px;
+  margin: 200px 70px;
   position: relative;
 }
 .timeline h1 {
@@ -138,7 +147,7 @@ main {
 
 /* asis tobe */
 .asis-tobe {
-  margin: 70px;
+  margin: 250px 70px;
   display: flex;
   justify-content: center;
 }
@@ -197,7 +206,7 @@ main {
 }
 .my-part img:nth-child(3) {
   display: block;
-  width: 1200px;
+  width: 80%;
   /* height: 100%; */
   margin: 70px auto;
 }
@@ -210,7 +219,7 @@ main {
 
 /* 스타일가이드 시작! */
 .styleguides {
-  margin: 70px;
+  margin: 250px 70px;
 }
 .styleguides h1 {
   font-size: 3rem;
@@ -223,6 +232,7 @@ main {
 .styleguides .keyword {
   justify-content: center;
   /* align-items: center; */
+  margin: 0 50px;
 }
 .styleguides .keyword h3 {
   font-size: 2rem;
@@ -254,21 +264,54 @@ main {
   margin: 30px 10px;
 }
 .styleguides .font {
+  margin: 50px;
   height: 40vh;
+  padding-bottom: 170px;
   align-items: center;
   justify-content: center;
   background: url(./images/font-img.png) no-repeat 50%;
-  background-position: 700px 200px;
+  background-position: 10% 100%;
+  flex-direction: column;
+  justify-content: left;
+}
+.styleguides .font .font-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+.styleguides .font .font-wrapper .left {
+  margin: 0 50px;
+}
+.styleguides .font .font-wrapper .left ul li:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.styleguides .font .font-wrapper .left ul li:nth-child(2) {
+  font-weight: 500;
+}
+/* 팝핀스 기울어진 글씨 */
+.styleguides .font .font-wrapper .left ul:nth-child(2) li p {
+  font-style: italic;
+}
+.styleguides .font h3 {
+  text-align: center;
+  width: 300px;
+  margin: 50px auto;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.styleguides .font h4 {
+  font-size: 1.5rem;
 }
 .styleguides .font .left ul li {
   display: flex;
   margin: 20px;
 }
 .styleguides .font .left ul li p {
-  margin: 0 10px;
+  margin: 0 5px;
 }
 .styleguides .font .right {
   flex-direction: column;
+  margin: 0 70px;
 }
 
 /* prototype */
@@ -283,10 +326,75 @@ main {
 .prototype .box {
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  /* justify-content: space-around; */
+  justify-content: center;
+}
+/* 프로토타입 폰트 사이즈 */
+.prototype .box h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+.prototype .box h3 {
+  font-size: 1.5rem;
+  color: #666;
+  font-weight: 600;
+  margin: 20px 0;
 }
 .prototype .box img {
-  width: 900px;
-  margin: 100px 20px;
+  width: 700px;
+  margin: 130px 50px;
+}
+/* box2 부터 이미지 크기 조정한것 */
+.prototype .box2 {
+  margin-left: 50px;
+}
+.prototype .box2 img {
+  width: 800px;
+}
+
+.prototype .box3 {
+  justify-content: left;
+  margin-left: 100px;
+  margin-top: 130px;
+}
+.prototype .box3 img {
+  width: 400px;
+  margin: 20px;
+  margin-bottom: 80px;
+}
+.review {
+  margin: 100px 70px;
+  position: relative;
+  height: 85vh;
+}
+.review h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 70px 0;
+}
+.review .txt-box h3 {
+  font-size: 1.5rem;
+  color: #1a5858;
+  margin: 20px 0;
+}
+.review .txt-box p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* 팀 oozz a 버튼 */
+.oozz-link {
+  padding: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+.oozz-link img {
+  width: 250px;
+  height: 100%;
+  transition: 0.3s;
+}
+.oozz-link img:hover {
+  transform: scale(1.05);
 }
