@@ -30,20 +30,20 @@
     <section class="main-1">
       <div class="text-box">
         <h1>프로젝트 목표</h1>
-        <p>미디어 쿼리를 이용한 반응형 웹 만들기</p>
+        <p>미디어 쿼리를 이용해 <br>코엑스 아쿠아리움 반응형 웹 만들기</p>
         <p>반응형 웹의 레이아웃 조절하는 방법 배우기</p>
       </div>
       <div class="img-box">
-        <h1>코엑스 아쿠아리움</h1>
+        <!-- <h1>코엑스 아쿠아리움</h1> -->
         <div class="screen">
           <div class="mobile">
-            <img src="./images/coex-mobile.png" alt="코엑스 아쿠아리움 모바일 임시 화면입니다">
+            <img src="./images/mobile.png" alt="코엑스 아쿠아리움 모바일 임시 화면입니다">
           </div>
           <div class="pc">
-            <img src="./images/coex-tablet.png" alt="코엑스 아쿠아리움 pc 화면입니다">
+            <img src="./images/pc.png" alt="코엑스 아쿠아리움 pc 화면입니다">
           </div>
           <div class="tablet">
-            <img src="./images/coex-tablet.png" alt="코엑스 아쿠아리움 태블릿 화면입니다">
+            <img src="./images/tab.png" alt="코엑스 아쿠아리움 태블릿 화면입니다">
           </div>
         </div>
       </div>
@@ -65,64 +65,63 @@
         <div class="font">
           <h2>NanumSquareRound</h2>
           <img class="font" src="./images/font-size.png" alt="폰트 사이즈 이미지입니다">
-          <!-- <div class="font-size">
-          <p>Aa</p>
-          <p>Aa</p>
-          <p>Aa</p>
-          <p>Aa</p>
-          <p>Aa</p>
-          <p>Aa</p>
-          <p>Aa</p>
-          <p>Aa</p>
-          <p>Aa</p>
-          <p>Aa</p>
-          <p>Aa</p>
-        </div>
-        <div class="font-size">
-          <p>font-size: 40px</p>
-          <p>font-size: 35px</p>
-          <p>font-size: 30px</p>
-          <p>font-size: 28px</p>
-          <p>font-size: 25px</p>
-          <p>font-size: 22px</p>
-          <p>font-size: 18px</p>
-          <p>font-size: 16px</p>
-          <p>font-size: 14px</p>
-          <p>font-size: 12px</p>
-        </div> -->
         </div>
       </div>
     </section>
     <section class="publishing">
       <h1>Publishing</h1>
-      <p>position과 flex, grid 등 레이아웃 조절</p>
-      <h3>미디어 쿼리</h3>
-      <p>모바일 우선</p>
-      <p>태블릿, 웹 순서로 각 크기별 구조에 맞는 요소 배치 고려</p>
-      <p>@media screen and (min-width:414px){}</p>
-      <h3>github</h3>
-      <p>버전 관리와 html, css의 코드공유, pages를 사용해 작업 결과물 구현</p>
+      <div class="txt-box">
+        <div class="left">
+          <p><strong>css</strong></p>
+          <p>position과 flex, grid 등 레이아웃 조절</p>
+          <p>header가 항상 상단에 고정될 수 있도록 position: fixed; 사용</p>
+          <p>justify-content: space-around;와 align-items: center;로 간격 조정</p>
+          <p>:hover를 사용해 마우스가 요소 위에 올려져 있을때 background: linear-gradient로<br> 배경의 색상에 그라데이션을 적용</p>
+        </div>
+
+        <div class="right">
+          <p><strong>미디어 쿼리</strong></p>
+          <p>모바일 우선</p>
+          <p>태블릿, 웹 순서로 각 크기별 구조에 맞는 요소 배치 고려</p>
+          <p>@media screen and (min-width:414px){}</p>
+          <p><strong>github</strong></p>
+          <p>버전 관리와 코드공유, html 영상 업로드 등</p>
+          <p>pages를 사용해 작업 결과물 구현</p>
+        </div>
+
+      </div>
+
     </section>
     <section class="problem">
       <div class="problem-text">
         <h1>Problem & Resolve</h1>
-        <h2>pc와 mobil의 내용이 다르다!</h2>
-        <h2>-해결법-</h2>
-        <p>! 모바일은 pc버전의 화면과 다르게 크기에 따라 숨겨지는 글들이 있다 !
-          이때 span, strong 등을 사용해서 p사이에 class나 id 값을 주고 css에서 display: none 또는 display: block을 사용해 보이거나 숨겼다.</p>
-        <h2>크기가 고정된 구조의 화면과 다르게 반응형 웹은 각 화면 크기 버전에 따라
-          html 관리가 필요하다!</h2>
-        <p>(px로 사이즈를 조절하면 grid나 flex, position의 레이아웃이 흘러넘칠때가 있다.)</p>
-        <h2>- 해결법 -</h2>
-        <h2>크기 고정값이 방해되는 부분을 %로 변경</h2>
-        <p>색션과 이미지를 %와 px을 섞어가며 배치,
-          min-width, max-width를 사용해 일정 이상 커지지 않게 관리하여 흘러넘침 해결
-          position로 고정이 필요한 부분에 적용</p>
-        <p>-> 반응형임을 고려해 html 문서 시작부터 작성하고 좀 더 효율적이고 짧은 코드로 관리할 수 있는 방법을 찾아 다음 프로젝트에서 적용해 볼 예정</p>
-      </div>
-      <div class="Resolve">
-        <!-- 문제이미지 들어갈곳 -->
-        <h1>문제이미지</h1>
+        <div class="number1">
+          <div class="txt">
+            <h3>pc와 mobil의 내용이 다르다!</h3>
+            <h3>-해결법-</h3>
+            <p>! 모바일은 pc버전의 화면과 다르게 크기에 따라 숨겨지는 글들이 있다 !
+              이때 span, strong 등을 사용해서<br> p사이에 class나 id 값을 주고 css에서 display: none 또는 display: block을 사용해 보이거나 숨겼다.</p>
+            <img src="./images/problem01.png" alt="문제이미지 1입니다">
+          </div>
+          <img src="./images/problem02.png" alt="문제 해결 이미지입니다">
+        </div>
+        <div class="number2">
+          <div class="txt">
+            <h3>크기가 고정된 구조의 화면과 다르게 반응형 웹은 각 화면 크기 버전에 따라
+              html 관리가 필요하다!</h3>
+            <p>(px로 사이즈를 조절하면 grid나 flex, position의 레이아웃이 흘러넘칠때가 있다.)</p>
+            <h3>- 해결법 -</h3>
+            <h3>크기 고정값이 방해되는 부분을 %로 변경</h3>
+            <p>색션과 이미지를 %와 px을 섞어가며 배치,
+              min-width, max-width를 사용해 일정 이상 커지지 않게 관리하여 흘러넘침 해결
+              position로 고정이 필요한 부분에 적용</p>
+            <p>-> 반응형임을 고려해 html 문서 시작부터 작성하고 좀 더 효율적이고 짧은 코드로 관리할 수 있는 방법을 찾아 다음 프로젝트에서 적용해 볼 예정</p>
+          </div>
+          <div class="img">
+            <img src="./images/problem03.png" alt="문제가 되는 부분 코드를 캡처한 이미지입니다">
+            <img src="./images/problem04.png" alt="문제가 되는 부분 코드를 캡처한 이미지입니다">
+          </div>
+        </div>
       </div>
     </section>
 
@@ -133,18 +132,17 @@
           구상했던 구조와는 다르게 새로 고쳐야 할 일이 많았다.
         </p>
         <p>pc버전에서만 보여지는 글은 div와 span을 사용해 숨김 기능이 가능하게 수정하였고,
-          미디어 쿼리 수업 내용을 참고하여 화면 크기당 달라지는 여백과 이미지들은 px에서 %로 값으로 변경했다.
+          미디어 쿼리 수업 내용을 참고하여 화면 크기당 달라지는 여백과 이미지들은 px에서 %로 값으로 변경했다. <br>
           이 작업을 통해 중요한 내용의 요소들이 어떡해야 자주 사람들에게 효과적으로 눈에 들어올지 고민하며 사용자를 위한 페이지란
-          무엇인가, 가독성을 위해서 색이나 크기 등은 어떻게 배치해야 하는가를 생각하는 공부 시간이 되었다.
+          무엇인가, 가독성을 위해서 색이나 크기 등은 <br> 어떻게 배치해야 하는가를 생각하는 시간이었다.
         </p>
         <p>
           이렇듯 사용자의 편의성이 중요한 프로젝트라 시각적인 css 효과에 대해 많은 공부가 필요했다. 지금 보았을때
-          보완할점이 눈에 띄게 많아 아쉽지만 다음 작업에서 조금 더 효율적인 작업 방식으로 진행하겠다는 다짐과 함께 마무리 지었다.
+          보완할점이 눈에 띄게 많아 아쉽지만 다음 작업에서 조금 더 효율적인 레이아웃을 짜고 작업 방식으로 진행하겠다는 다짐과 함께 마무리 지었다.
         </p>
       </div>
-      <div class="a-button">
-        <a href="./coex-Aquarium.html">사이트 바로가기</a>
-      </div>
+      <a class="coex-button" href="./coex-Aquarium.html"><img src="./images/a-button.png"
+          alt="코엑스 아쿠아리움으로 바로 가는 버튼입니다"></a>
     </section>
 
   </main>

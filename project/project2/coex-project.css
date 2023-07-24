@@ -18,7 +18,8 @@ section h1 {
   font-weight: bold;
 }
 .main-1 {
-  height: 70vh;
+  padding-top: 100px;
+  height: 80vh;
   display: flex;
 }
 .main-1 .text-box {
@@ -28,7 +29,7 @@ section h1 {
 .main-1 .text-box p {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 30px 50px;
+  margin: 30px 0;
 }
 .main-1 .text-box p:nth-child(2) {
   margin-top: 70px;
@@ -43,7 +44,6 @@ section h1 {
   display: flex;
   flex-direction: column;
   width: 50%;
-  /* margin: 50px; */
   margin: 70px 0;
 }
 .main-1 .img-box h1 {
@@ -58,34 +58,21 @@ section h1 {
 }
 .main-1 .img-box .screen .mobile {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: -140px;
-  width: 180px;
-  height: 350px;
-  border-radius: 25px;
-  overflow: hidden;
   z-index: 999;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 170px;
 }
 .main-1 .img-box .screen .pc {
   position: absolute;
-  top: -20px;
-  left: 0;
-  width: 700px;
-  /* height: 300px; */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  top: -40px;
+  left: -30px;
 }
 .main-1 .img-box .screen .tablet {
   position: absolute;
-  top: 40px;
-  left: 400px;
+  top: 70px;
+  left: 450px;
   width: 400px;
-  height: 300px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 /* 스타일 가이드 시작! */
@@ -94,25 +81,109 @@ section h1 {
 }
 .styleGuides .flex {
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: center;
+  margin: 70px;
 }
 .styleGuides h2 {
   font-weight: bold;
   font-size: 2rem;
   margin: 20px;
 }
+.styleGuides .point-color,
+.styleGuides .gray-color {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.styleGuides .font {
+  margin: 0 50px;
+}
+.styleGuides .point-color h2,
+.styleGuides .gray-color h2,
+.styleGuides .font h2 {
+  margin: 50px;
+}
 .styleGuides img {
   width: 300px;
   margin: 20px;
 }
 /* 퍼블리싱 */
-.publishing {
+.publishing h1 {
+  margin: 70px 0;
 }
+.publishing p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 10px;
+}
+.publishing .txt-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.publishing .txt-box .left {
+  margin-right: 50px;
+}
+.publishing .txt-box p strong {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.problem .problem-text h1 {
+  margin: 70px 0;
+}
+.problem .problem-text h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.problem .number1 {
+  margin: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.problem .number1 {
+  margin: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.problem .number1 img:nth-child(4) {
+  width: 200px;
+}
+.problem .number1 img {
+  width: 500px;
+}
+.problem .number2 {
+  margin: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.problem .number2 .txt {
+  width: 500px;
+  margin: 70px;
+}
+.problem .number2 img {
+  width: 400px;
+  margin: 10px 0;
+}
+.problem .number2 img:nth-child(1) {
+  width: 200px;
+}
+/*  */
 .review {
-  height: 50vh;
+  height: 80vh;
+  position: relative;
+}
+.review h1 {
+  margin: 70px 0;
 }
 .review p {
-  margin: 10px 50px;
+  margin: 15px;
+  line-height: 2;
 }
 
 /* 색션 뷰박스, 컨택트 마진값 없애기 */
@@ -120,4 +191,19 @@ section h1 {
 .viewBox {
   margin: 0;
   padding: 0;
+}
+
+.coex-button {
+  width: 300px;
+  padding: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 0.3s;
+}
+.coex-button img {
+  width: 300px;
+}
+.coex-button:hover {
+  transform: scale(1.1);
 }
