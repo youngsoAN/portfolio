@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/* body {
+  background: linear-gradient(#abe4f0, #b4cdf0, #d6c7fc, #ffc5f1, #ffd1f5);
+} */
+section {
+  /* height: 100vh; */
+}
+.flex {
+  display: flex;
+}
+
+/* 시작! */
+
+header {
+  z-index: 999;
+  width: 100%;
+  padding: 30px;
+  justify-content: space-around;
+  position: fixed;
+  color: #ddd;
+}
+header img {
+  width: 100px;
+  height: 100%;
+}
+header ul li {
+  padding: 0 10px;
+}
+
+/* 메인 시작 */
+.lush_main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* background-color: #212121; */
+  background: url(./images/figma/lush_bg00.png) no-repeat 50% / cover;
+  justify-content: center;
+  align-items: center;
+}
+/* 백그라운드에 들어가는 꽃 이미지 */
+.lush_main .bg img {
+  position: absolute;
+}
+.lush_main .bg img:nth-child(1) {
+  top: 50px;
+  left: 0;
+  width: 200px;
+}
+.lush_main .bg img:nth-child(2) {
+  width: 180px;
+  top: 0;
+  right: 0;
+}
+.lush_main .bg img:nth-child(3) {
+  width: 300px;
+  bottom: 50px;
+  left: 50px;
+}
+.lush_main .bg img:nth-child(4) {
+  width: 14%;
+  bottom: 90px;
+  right: 0;
+}
+.lush_main .bg img:nth-child(5) {
+  width: 200px;
+  top: 0;
+  left: 100px;
+}
+.lush_main .bg img:nth-child(6) {
+  width: 150px;
+  top: 100px;
+  right: 400px;
+}
+/* 러쉬 메인 z idx 조절 */
+.lush_main .text,
+.lush_main .img {
+  z-index: 999;
+}
+/* 러쉬 텍스트 */
+.lush_main .text img {
+  width: 70%;
+}
+.lush_main .text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ddd;
+}
+.lush_main .text h2 {
+  color: #ddd;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+/* 러쉬 이미지 */
+.lush_main .img {
+  width: 800px;
+}
+
+.about {
+  width: 100%;
+  height: 110vh;
+  overflow: hidden;
+  position: relative;
+  top: -100px;
+}
+.about .bg {
+  position: absolute;
+}
+.about .img img {
+  position: absolute;
+}
+.about .img img:nth-child(1) {
+  top: 30%;
+}
+.about .img img:nth-child(2) {
+  bottom: 10px;
+  left: 50px;
+  width: 55%;
+}
+.about .img img:nth-child(3) {
+  top: 50%;
+  left: 0;
+}
+.about .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 250px 200px;
+}
+.about .text img {
+  width: 700px;
+  z-index: 999;
+}
+.about .text p {
+  z-index: 999;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #fff;
+  margin: 30px 0;
+}
+.about .text .learn_more {
+  width: 200px;
+  height: 70px;
+  position: relative;
+}
+
+.about .text .learn_more img {
+  width: 100%;
+}
+.about .text .learn_more p {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  color: inherit;
+}
+.about .text .learn_more:hover p {
+  color: #fff;
+}
+.about .text .learn_more:hover img {
+  filter: invert(45%) sepia(44%) saturate(271%) hue-rotate(212deg)
+    brightness(92%) contrast(83%);
+  transform: scale(1.05);
+}
+/* services 시작 */
+.services {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.services .bg {
+  position: absolute;
+  top: -170px;
+}
+.services img {
+  position: absolute;
+}
