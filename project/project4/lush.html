@@ -1,84 +1,253 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>lush</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://youngsoan.github.io/portfolio/" />
+    <meta property="og:title" content="LUSH" />
+    <meta
+      property="og:description"
+      content="러쉬 웹사이트를 리디자인한 페이지입니다."
+    />
+    <meta
+      property="og:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>lush</title>
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://youngsoan.github.io/portfolio/" />
-  <meta property="og:title" content="LUSH" />
-  <meta property="og:description" content="러쉬 웹사이트를 리디자인한 페이지입니다." />
-  <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <!-- swiper 링크 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
-  <!-- favicon -->
-  <link rel="icon" href="./images/favicon_io/favicon-32x32.png">
-  <!-- reset -->
-  <link rel="stylesheet" href="../../common/reset.css">
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon_io/favicon-32x32.png" />
+    <!-- reset -->
+    <link rel="stylesheet" href="../../common/reset.css" />
 
-  <!-- style -->
-  <link rel="stylesheet" href="./lush.css">
-</head>
+    <!-- style -->
+    <link rel="stylesheet" href="./lush.css" />
 
-<body>
-  <header class="flex">
-    <img src="./images/figma/LUSH_mini_logo.png" alt="러쉬 로고 이미지입니다">
-    <ul class="flex">
-      <li>러쉬소개</li>
-      <li>캠페인</li>
-      <li>스파</li>
-      <li>매장안내</li>
-      <li>B2B</li>
-      <!-- <li>About</li>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- 내가 만든 js -->
+    <script defer src="lush.js"></script>
+  </head>
+
+  <body>
+    <header class="flex">
+      <img
+        src="./images/figma/LUSH_mini_logo.png"
+        alt="러쉬 로고 이미지입니다"
+      />
+      <ul class="flex">
+        <li>러쉬소개</li>
+        <li>캠페인</li>
+        <li>스파</li>
+        <li>매장안내</li>
+        <li>B2B</li>
+        <!-- <li>About</li>
       <li>Services</li>
       <li>Product</li>
       <li>Contact</li> -->
-    </ul>
-  </header>
-  <section class="lush_main flex">
-    <div class="bg">
-      <img src="./images/figma/bg_01.png" alt="러쉬 배경 왼쪽 야자수 잎 이미지입니다">
-      <img src="./images/figma/bg_02.png" alt="러쉬 배경 오른쪽 야자수 잎 이미지입니다">
-      <img src="./images/figma/bg_03.png" alt="러쉬 배경  길다란 하얀꽃 줄기 이미지입니다">
-      <img src="./images/figma/bg_04.png" alt="러쉬 배경 왼쪽 하단 하얀꽃 줄기 이미지입니다">
-      <img src="./images/figma/bg_05.png" alt="러쉬 배경 왼쪽 상단에 쓰이는 하얀꽃 이미지 입니다">
-      <img src="./images/figma/bg_06.png" alt="러쉬 배경 오른쪽 하단 하얀꽃 이미지 입니다">
-    </div>
-    <div class="text">
-      <img src="./images/figma/LUSH_logo.png" alt="러쉬 메인 로고입니다">
-      <h1>fresh handmade<br>cosmetics</h1>
-      <h2>“making a water-based product self-preseving<br>requires acareful balance of natural ingredients.”</h2>
-    </div>
-    <div class="img">
-      <img src="./images/figma/lush_sexbomb.png" alt="러쉬 메인에 들어가는 섹스밤 기프트 이미지입니다">
-    </div>
-  </section>
+      </ul>
+    </header>
+    <section class="lush_main flex">
+      <div class="bg">
+        <img
+          src="./images/figma/bg_01.png"
+          alt="러쉬 배경 왼쪽 야자수 잎 이미지입니다"
+        />
+        <img
+          src="./images/figma/bg_02.png"
+          alt="러쉬 배경 오른쪽 야자수 잎 이미지입니다"
+        />
+        <img
+          src="./images/figma/bg_03.png"
+          alt="러쉬 배경  길다란 하얀꽃 줄기 이미지입니다"
+        />
+        <img
+          src="./images/figma/bg_04.png"
+          alt="러쉬 배경 왼쪽 하단 하얀꽃 줄기 이미지입니다"
+        />
+        <img
+          src="./images/figma/bg_05.png"
+          alt="러쉬 배경 왼쪽 상단에 쓰이는 하얀꽃 이미지 입니다"
+        />
+        <img
+          src="./images/figma/bg_06.png"
+          alt="러쉬 배경 오른쪽 하단 하얀꽃 이미지 입니다"
+        />
+      </div>
+      <div class="text">
+        <img src="./images/figma/LUSH_logo.png" alt="러쉬 메인 로고입니다" />
+        <h1>fresh handmade<br />cosmetics</h1>
+        <h2>
+          “making a water-based product self-preseving<br />requires acareful
+          balance of natural ingredients.”
+        </h2>
+      </div>
+      <div class="img">
+        <img
+          src="./images/figma/lush_sexbomb.png"
+          alt="러쉬 메인에 들어가는 섹스밤 기프트 이미지입니다"
+        />
+      </div>
+    </section>
 
-  <section class="about">
-    <img class="bg" src="./images/figma/lush_bg01.png" alt="연 하늘색과 연보라색 그라데이션이 들어간 백그라운드 이미지입니다">
-    <div class="img">
-      <img src="./images/figma/lush_text1.png" alt="">
-      <img src="./images/figma/lush_info_01.png" alt="동물실험을 반대하는 이미지입니다">
-      <img src="./images/figma/lush_text2.png" alt="">
-    </div>
-    <div class="text">
-      <img src="./images/figma/about.png" alt="about 글씨 이미지입니다">
-      <p>러쉬는 어떤 이유에서도 동물실험 하지 않고, 동물실험을 거친 원재료조차 사용하지 않습니다.<br>
-        저희는 직접 구매팀을 운영하며, 엄격한 기준을 바탕으로 윤리적인 공정 여부를 확인합니다.<br>
-        믿을수 있는 생산자로부터 직거래를 원칙으로 합니다.<br>
-        신선함은 러쉬 철학의 핵심입니다.</p>
-      <a class="learn_more" href="#">
-        <img src="./images/figma/button.svg" alt="어바웃 페이지의 더보기 버튼입니다">
-        <p>learn more</p>
-      </a>
-    </div>
+    <section class="about">
+      <div class="bg"></div>
+      <div class="img">
+        <img src="./images/figma/lush_text1.png" alt="" />
+        <img
+          src="./images/figma/lush_info_01.png"
+          alt="동물실험을 반대하는 이미지입니다"
+        />
+        <img src="./images/figma/lush_text2.png" alt="" />
+      </div>
+      <div class="text">
+        <img src="./images/figma/about.png" alt="about 글씨 이미지입니다" />
+        <p>
+          러쉬는 어떤 이유에서도 동물실험 하지 않고, 동물실험을 거친 원재료조차
+          사용하지 않습니다.<br />
+          저희는 직접 구매팀을 운영하며, 엄격한 기준을 바탕으로 윤리적인 공정
+          여부를 확인합니다.<br />
+          믿을수 있는 생산자로부터 직거래를 원칙으로 합니다.<br />
+          신선함은 러쉬 철학의 핵심입니다.
+        </p>
+        <a class="learn_more" href="#">
+          <img
+            src="./images/figma/button.svg"
+            alt="어바웃 페이지의 더보기 버튼입니다"
+          />
+          <p>learn more</p>
+        </a>
+      </div>
+    </section>
+    <section class="services">
+      <!-- <img
+        class="bg"
+        src="./images/figma/lush_bg00.png"
+        alt="연 하늘색과 연보라색 그라데이션이 들어간 백그라운드 이미지입니다"
+      /> -->
+      <img
+        class="bg-logo"
+        src="./images/figma/services.png"
+        alt="service 글자 이미지입니다"
+      />
+      <ul class="flex">
+        <li>
+          <img
+            src="./images/figma/services_01.png"
+            alt="러쉬 서비스 이미지입니다"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/figma/services_02.png"
+            alt="러쉬 서비스 이미지입니다"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/figma/services_03.png"
+            alt="러쉬 서비스 이미지입니다"
+          />
+        </li>
+      </ul>
+    </section>
 
-  </section>
-  <section class="services">
-    <img class="bg" src="./images/figma/lush_bg00.png" alt="연 하늘색과 연보라색 그라데이션이 들어간 백그라운드 이미지입니다">
-    <img src="./images/figma/services.png" alt="service 글자 이미지입니다">
-  </section>
-  <section></section>
-</body>
+    <section class="product">
+      <h1>
+        <img src="./images/figma/product.png" alt="product 이미지입니다" />
+      </h1>
+      <!-- swiper-slide -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/figma/slide_01.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/figma/slide_02.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/figma/slide_03.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/figma/slide_04.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/figma/slide_05.png" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="contact">
+      <h1>
+        <img src="./images/figma/contact.png" alt="contact 이미지입니다" />
+      </h1>
+      <div class="flex">
+        <div class="text">
+          <h2>가장 가까운 매장을 찾고<br />향기로운 러쉬를 만나보세요</h2>
+          <h3>손을 씻고 싶을 때 언제든 러쉬 매장을 들려주세요.</h3>
+          <a class="learn_more" href="#">
+            <img
+              src="./images/figma/button.svg"
+              alt="어바웃 페이지의 더보기 버튼입니다"
+            />
+            <p>learn more</p>
+          </a>
+        </div>
+        <div class="img">
+          <img
+            src="./images/figma/lush_store.png"
+            alt="러쉬 매장 이미지입니다"
+          />
+        </div>
+      </div>
+    </section>
 
+    <footer>
+      <img src="./images/figma/LUSH_mini_logo_b.png" alt="러쉬 로고입니다" />
+      <div class="left">
+        <ul class="top">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">영상정보처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+        </ul>
+        <ul>
+          <li>
+            서울 강남구 학동로 336 (메이트리 빌딩(matree B/D)) 1층 주식회사
+            러쉬코리아
+          </li>
+          <li>사이트 운영자 : 주식회사 러쉬코리아 | 대표이사 : 우미령</li>
+          <li>사업자 등록번호 : 201-81-77964 사업자정보확인</li>
+          <li>
+            통신판매업 신고번화 : 2012-서울서초-0647 | 개인정보보호책임자 :
+            신상훈
+          </li>
+          <li>copyright 더 써야함 까먹고 안씀;;;</li>
+        </ul>
+      </div>
+      <div class="center">
+        <p>고객센터</p>
+        <ul>
+          <li>1644-2357</li>
+          <li>webmaster@lush.co.kr</li>
+          <li>상담전화 13:00 ~ 16:00 (평일)</li>
+          <li>상담톡 10:00 ~ 16:00 (평일)</li>
+        </ul>
+      </div>
+      <div class="right">
+        <p>기업선물</p>
+        <ul>
+          <li>070-4713-8543</li>
+          <li>order@lush.co.kr</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

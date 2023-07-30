@@ -3,9 +3,6 @@
 /* body {
   background: linear-gradient(#abe4f0, #b4cdf0, #d6c7fc, #ffc5f1, #ffd1f5);
 } */
-section {
-  /* height: 100vh; */
-}
 .flex {
   display: flex;
 }
@@ -103,10 +100,15 @@ header ul li {
   height: 110vh;
   overflow: hidden;
   position: relative;
-  top: -100px;
+  top: -80px;
 }
 .about .bg {
-  position: absolute;
+  /* position: absolute; */
+  background: url(./images/figma/lush_bg01.png) no-repeat 50%;
+  background-position: 0 0;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 .about .img img {
   position: absolute;
@@ -124,6 +126,9 @@ header ul li {
   left: 0;
 }
 .about .text {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -170,13 +175,130 @@ header ul li {
 /* services 시작 */
 .services {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
+  top: -140px;
+  background: url(./images/figma/lush_bg00.png) no-repeat 50%;
+  background-position: 0 0;
+  background-size: cover;
+  padding: 250px 0;
 }
-.services .bg {
+/* .services .bg {
   position: absolute;
   top: -170px;
+} */
+.services .bg-logo {
+  width: 1000px;
+  display: block;
+  margin: 0 auto;
 }
-.services img {
+.services .flex {
+  justify-content: center;
+}
+
+.services .flex li:hover img {
+  /* transform: scale(1.02); */
+  border: 7px solid #ffffff;
+}
+.services .flex li {
+  margin: 0 70px;
+  position: relative;
+  top: -90px;
+  /* position: absolute; */
+}
+.services .flex img {
+  /* position: absolute; */
+  z-index: 999;
+  width: 130%;
+  transition: 0.2s;
+}
+
+.product {
+  background: url(./images/figma/lush_bg02.png) no-repeat 50% / cover;
+  position: relative;
+  top: -270px;
+  padding-bottom: 100px;
+}
+.product h1 {
+  width: 950px;
+  margin: 0 auto;
+}
+.product h1 img {
+  padding-top: 200px;
+}
+.product .swiper {
+  width: 100%;
+}
+.product .swiper .swiper-slide {
+  width: 50%;
+}
+.product .swiper .swiper-slide img {
+  width: 100%;
+}
+
+.contact {
+  width: 100%;
+  background: url(./images/figma/lush_bg00.png);
+  position: relative;
+  top: -320px;
+}
+.contact h1 {
+  padding-top: 220px;
+  width: 900px;
+  margin-left: 10%;
+}
+.contact .flex {
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.contact .text {
+  margin: 100px 50px;
+  color: #fff;
+}
+.contact .text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.contact .text h3 {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+.contact .text .learn_more {
+  width: 200px;
+  height: 70px;
+  position: relative;
+}
+.contact .flex .text .learn_more img {
+  width: 50%;
+}
+.contact .text .learn_more p {
   position: absolute;
+  top: 25px;
+  left: 25%;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  color: #000;
+}
+.contact .text .learn_more:hover p {
+  color: #fff;
+  transform: scale(1.1);
+}
+.contact .text .learn_more:hover img {
+  filter: invert(45%) sepia(44%) saturate(271%) hue-rotate(212deg)
+    brightness(92%) contrast(83%);
+  transform: scale(1.05);
+}
+.contact .img {
+  position: relative;
+  top: -80px;
+  width: 700px;
+}
+
+footer {
+  background: url(./images/figma/lush_bg03.png) no-repeat 50% / cover;
 }
