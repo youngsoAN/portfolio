@@ -131,6 +131,10 @@ main .container .project:hover p {
   background-color: #fff;
   z-index: 999;
 }
+main .container .project .img-txt p {
+  background-color: #fff;
+  z-index: 9999;
+}
 /* 돌아가는 배경 */
 main .container .project .rotate {
   width: 200%;

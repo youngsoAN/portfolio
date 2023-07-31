@@ -92,6 +92,8 @@ main a .logo_img {
 /* 프로필 */
 .profil {
   margin: 70px 50px;
+  margin-bottom: 0;
+  padding-bottom: 90px;
   background-color: #fff;
   /* border-bottom: 10px solid #ffdbdb; */
   justify-content: space-between;
@@ -120,8 +122,8 @@ main a .logo_img {
 .profil_left .profil_txt .keyword .pen {
   width: 120px;
   position: absolute;
-  top: -50px;
-  left: 730px;
+  top: 10px;
+  left: 750px;
   transform: rotate(15deg);
 }
 .profil_left .profil_txt .keyword h2 {
@@ -133,7 +135,7 @@ main a .logo_img {
   width: 300px;
 }
 .profil_center {
-  margin-top: 330px;
+  margin-top: 400px;
   font-size: 1.8rem;
   width: 33%;
   text-align: left;
@@ -148,15 +150,16 @@ main a .logo_img {
   margin-top: 30px;
   position: relative;
   width: 33%;
+  left: -70px;
 }
-.profil_right .main {
+/* .profil_right .main {
   position: absolute;
   top: 0;
   left: 0;
   width: 400px;
   z-index: 999;
-}
-.profil_right .img_slide1 {
+} */
+/* .profil_right .img_slide1 {
   width: 200px;
   height: 406px;
   position: absolute;
@@ -164,17 +167,17 @@ main a .logo_img {
   left: 100px;
   display: flex;
   overflow: hidden;
-}
-.profil_right .img_slide1 img {
+} */
+/* .profil_right .img_slide1 img {
   width: 200px;
-}
-.profil_right .slide_btn {
+} */
+/* .profil_right .slide_btn {
   display: flex;
   position: absolute;
   bottom: 0;
   left: 100px;
-}
-.profil_right .slide_btn li {
+} */
+/* .profil_right .slide_btn li {
   width: 40px;
   height: 10px;
   border-radius: 20px;
@@ -182,10 +185,7 @@ main a .logo_img {
   background-color: #ffd5a5;
   margin: 10px;
   transition: 0.3s;
-}
-.profil_right .slide_btn li:hover {
-  background-color: #ffa2a2;
-}
+} */
 
 /* skills */
 .skills {
