@@ -102,6 +102,8 @@ main .container .main-logo {
 }
 main .container .project {
   margin: 50px 250px;
+  transition: 0.4s;
+  position: relative;
 }
 main .container .project:nth-child(3),
 main .container .project:nth-child(4) {
@@ -109,19 +111,49 @@ main .container .project:nth-child(4) {
 }
 main .container .project img {
   width: 200px;
+  z-index: 999;
+  border-radius: 20px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.082), 0 8px 8px rgba(0, 0, 0, 0.11);
+  transition: 0.3s;
 }
 main .container .project h1 {
   font-size: 1.5rem;
   font-weight: 600;
-  transition: 0.4s;
   width: 200px;
   margin: 20px auto;
   padding: 10px 0;
   border-radius: 20px;
 }
-main .container .project:hover h1 {
-  background-color: #ffefd0c0;
+main .container .project:hover img {
+  transform: scale(0.95);
 }
+main .container .project:hover p {
+  background-color: #fff;
+  z-index: 999;
+}
+/* 돌아가는 배경 */
+main .container .project .rotate {
+  width: 200%;
+  position: absolute;
+  top: -25%;
+  left: -45%;
+  opacity: 0;
+  z-index: 1;
+  box-shadow: none;
+}
+main .container .project:hover .rotate {
+  opacity: 1;
+  animation: rotate infinite 20s;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
 /* 꿀벌 움직이는 이미지 */
 .dance {
   position: absolute;
