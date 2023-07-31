@@ -6,16 +6,30 @@
 .flex {
   display: flex;
 }
-
+body {
+  position: relative;
+  width: 100vw;
+  /* overflow: hidden; */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+main {
+  width: 100vw;
+  height: 100%;
+}
 /* 시작! */
 
 header {
-  z-index: 999;
+  z-index: 9999;
   width: 100%;
   padding: 30px;
   justify-content: space-around;
   position: fixed;
   color: #ddd;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
 }
 header img {
   width: 100px;
@@ -42,7 +56,7 @@ header ul li {
 .lush_main .bg img:nth-child(1) {
   top: 50px;
   left: 0;
-  width: 200px;
+  width: 220px;
 }
 .lush_main .bg img:nth-child(2) {
   width: 180px;
@@ -50,29 +64,37 @@ header ul li {
   right: 0;
 }
 .lush_main .bg img:nth-child(3) {
-  width: 300px;
-  bottom: 50px;
-  left: 50px;
+  width: 350px;
+  bottom: -15px;
+  left: 15px;
 }
 .lush_main .bg img:nth-child(4) {
-  width: 14%;
-  bottom: 90px;
-  right: 0;
+  width: 250px;
+  bottom: 120px;
+  right: 20px;
+  transform: rotate(20deg);
+  opacity: 0.8;
 }
 .lush_main .bg img:nth-child(5) {
-  width: 200px;
-  top: 0;
+  width: 300px;
+  top: 40px;
   left: 100px;
 }
 .lush_main .bg img:nth-child(6) {
-  width: 150px;
-  top: 100px;
-  right: 400px;
+  width: 250px;
+  opacity: 0.8;
+  top: 80px;
+  right: 350px;
 }
 /* 러쉬 메인 z idx 조절 */
 .lush_main .text,
 .lush_main .img {
   z-index: 999;
+  position: relative;
+}
+.lush_main .text {
+  /* width: 40%; */
+  left: 180px;
 }
 /* 러쉬 텍스트 */
 .lush_main .text img {
@@ -83,12 +105,14 @@ header ul li {
   font-weight: bold;
   text-transform: uppercase;
   color: #ddd;
+  line-height: 1;
 }
 .lush_main .text h2 {
   color: #ddd;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   text-transform: capitalize;
+  line-height: 1.2;
 }
 /* 러쉬 이미지 */
 .lush_main .img {
@@ -133,6 +157,7 @@ header ul li {
   flex-direction: column;
   align-items: flex-end;
   margin: 250px 200px;
+  font-weight: 700;
 }
 .about .text img {
   width: 700px;
@@ -305,11 +330,45 @@ header ul li {
 footer {
   width: 100%;
   height: 20vh;
-  background: url(./images/figma/lush_bg03.png) no-repeat 50% / cover;
-  justify-content: space-around;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 100px;
+}
+footer .bg {
+  width: 100vw;
+  height: 500px;
+  position: absolute;
 }
 footer img {
-  width: 150px;
+  width: 130px;
+  margin-top: 50px;
   /* height: 100%; */
+}
+footer .text {
+  z-index: 999;
+  width: 100%;
+  height: 20vh;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  padding: 20px 80px;
+}
+footer .text .left .top,
+footer .text .center p,
+footer .text .right p {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+footer .text .left .top li,
+footer .text .center p,
+footer .text .right p {
+  margin: 20px;
+  margin-left: 0;
+}
+footer .text .left ul li,
+footer .text .center ul li,
+footer .text .right ul li {
+  margin: 5px 0;
 }
