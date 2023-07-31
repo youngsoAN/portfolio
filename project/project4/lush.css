@@ -9,6 +9,7 @@
 body {
   position: relative;
   width: 100vw;
+  height: 100%;
   /* overflow: hidden; */
 }
 body::-webkit-scrollbar {
@@ -31,6 +32,19 @@ header {
   font-size: 1.1rem;
   text-transform: uppercase;
 }
+/* 블러처리 배경 */
+/* header .blur {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ffffff09, #ffffff1e, #ffffff00);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+} */
 header img {
   width: 100px;
   height: 100%;
