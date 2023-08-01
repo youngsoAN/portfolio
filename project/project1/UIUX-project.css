@@ -577,7 +577,7 @@ main a:hover {
 }
 */
 .pdf-button {
-  width: 300px;
+  width: 250px;
   padding: 50px;
   position: absolute;
   bottom: 0;
@@ -585,7 +585,7 @@ main a:hover {
   transition: 0.3s;
 }
 .pdf-button img {
-  width: 300px;
+  width: 250px;
 }
 .pdf-button:hover {
   transform: scale(1.1);

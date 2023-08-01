@@ -232,7 +232,7 @@ section h1 {
   transition: 0.3s;
 }
 .coex-button img {
-  width: 300px;
+  width: 250px;
 }
 .coex-button:hover {
   transform: scale(1.1);
