@@ -108,7 +108,7 @@ header ul li {
   display: flex;
 }
 
-/* 글자 따로 움직이게 만듦 */
+/* !글자 따로 움직이게 만듦! */
 .lush_main .text h1 .move_text {
   transform: translateY(250px) rotate(50deg);
   opacity: 0;
