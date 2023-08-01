@@ -100,6 +100,39 @@ main a .logo_img {
   text-align: center;
   height: 90vh;
 }
+
+/* 키워드 움직이게 하는 애니메이션 */
+.profil:hover .profil_left .keyword h2:nth-child(3),
+.profil:hover .profil_left .keyword h2:nth-child(5) {
+  animation: number1 0.5s alternate 5;
+}
+@keyframes number1 {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+.profil:hover .profil_left .keyword h2:nth-child(1),
+.profil:hover .profil_left .keyword h2:nth-child(8) {
+  animation: number2 0.5s alternate 5;
+}
+@keyframes number2 {
+  0% {
+    transform: translateY(7px);
+  }
+  70% {
+    transform: translateY(-7px);
+  }
+  /* 90% {
+    transform: translateY(5px);
+  } */
+  100% {
+    transform: translateY(0);
+  }
+}
+/* 키워드 애니메이션 끝! */
 .profil_left {
   margin: 200px 50px 50px 100px;
   text-align: left;
