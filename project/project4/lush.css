@@ -41,7 +41,7 @@ header ul li {
   padding: 0 10px;
 }
 
-/* 메인 시작 */
+/******* 러쉬 메인 시작 *******/
 .lush_main {
   position: relative;
   width: 100%;
@@ -105,6 +105,30 @@ header ul li {
   color: #fff;
   line-height: 1;
   text-shadow: 5px 5px 7px #1f1f1fb0;
+  display: flex;
+}
+
+/* 글자 따로 움직이게 만듦 */
+.lush_main .text h1 .move_text {
+  transform: translateY(250px) rotate(50deg);
+  opacity: 0;
+  transition: 0.3s;
+}
+.lush_main:hover .text h1 .move_text {
+  transform: translateY(0) rotate(0);
+  opacity: 1;
+}
+.lush_main:hover .text h1 .move_text:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.lush_main:hover .text h1 .move_text:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.lush_main:hover .text h1 .move_text:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.lush_main:hover .text h1 .move_text:nth-child(4) {
+  transition-delay: 0.4s;
 }
 .lush_main .text h2 {
   font-size: 4rem;
@@ -124,6 +148,7 @@ header ul li {
 .lush_main .img {
   width: 800px;
 }
+/******* 러쉬 메인 끝! *******/
 
 .about {
   width: 100%;
@@ -170,6 +195,7 @@ header ul li {
   font-size: 300px;
   line-height: 1;
   text-shadow: 5px 5px 7px #1f1f1fb0;
+  display: flex;
 }
 .about .text p {
   z-index: 999;
