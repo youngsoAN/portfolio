@@ -543,7 +543,7 @@ section {
 }
 
 /* pdf 파일 바로가기 */
-main a {
+/* main a {
   position: absolute;
   bottom: 50px;
   right: 0;
@@ -558,10 +558,11 @@ main a {
   font-weight: 700;
 
   transition: 0.4s;
-  /*!! 인터넷 긁어온거 !!*/
+  /*!! 인터넷 긁어온거 !!
   background-size: 200% auto;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
+}*/
+/*
 main a:hover {
   background-position: right center;
 }
@@ -573,4 +574,19 @@ main a:hover {
     #fff 100%
   );
   color: #fff;
+}
+*/
+.pdf-button {
+  width: 300px;
+  padding: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  transition: 0.3s;
+}
+.pdf-button img {
+  width: 300px;
+}
+.pdf-button:hover {
+  transform: scale(1.1);
 }

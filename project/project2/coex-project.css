@@ -3,7 +3,8 @@
 main {
   background-color: #fff;
   /* width: 100%; */
-  margin: 70px;
+  margin: 100px;
+  margin-top: 70px;
 }
 /* 색션 스타일 */
 section {
@@ -132,8 +133,11 @@ section h1 {
 .publishing .txt-box .left {
   margin-right: 50px;
 }
+.publishing .txt-box p {
+  font-size: 1.2rem;
+}
 .publishing .txt-box p strong {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 30px 0;
 }
 
@@ -141,12 +145,15 @@ section h1 {
   margin: 70px 0;
 }
 .problem .problem-text h3 {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-weight: bold;
   margin: 15px 0;
 }
+.problem .problem-text p {
+  font-size: 1.2rem;
+}
 .problem .number1 {
-  margin: 80px 0;
+  /* margin: 80px 0; */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -156,6 +163,11 @@ section h1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.problem .number1 .txt {
+  /* width: 500px; */
+  margin: 50px;
+  line-height: 1.5;
 }
 .problem .number1 img:nth-child(4) {
   width: 200px;
@@ -171,8 +183,9 @@ section h1 {
   justify-content: space-around;
 }
 .problem .number2 .txt {
-  width: 500px;
+  width: 700px;
   margin: 70px;
+  margin-right: 200px;
   line-height: 1.5;
 }
 .problem .number2 img {
@@ -192,8 +205,9 @@ section h1 {
   margin: 70px 0;
 }
 .review p {
-  margin: 15px;
-  line-height: 2;
+  font-size: 1.2rem;
+  margin: 30px 0;
+  line-height: 1.5;
 }
 
 /* 색션 뷰박스, 컨택트 마진값 없애기 */
