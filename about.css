@@ -152,6 +152,19 @@ main a .logo_img {
   flex-wrap: wrap;
 }
 /* 꿀벌 펜 이미지 */
+/* 꿀벌 움직이게 애니메이션 넣음 */
+.profil:hover .profil_txt .pen {
+  animation: jump 0.5s alternate 5;
+}
+@keyframes jump {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+/* 애니메이션 끝 */
 .profil_left .profil_txt .keyword .pen {
   width: 120px;
   position: absolute;
