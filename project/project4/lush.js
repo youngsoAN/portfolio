@@ -66,3 +66,15 @@ $(document).ready(function () {
 
 // 마우스 감추기
 document.body.style.cursor = "none";
+
+// 스크롤 부드럽게 이동
+$(".scroll-link").click(function (event) {
+  event.preventDefault();
+  var target = $(this).attr("href");
+  $("html, body").animate(
+    {
+      scrollTop: $(target).offset().top,
+    },
+    500
+  ); // 부드러운 스크롤 속도 (1초)
+});
