@@ -24,17 +24,24 @@
 
   <!-- swiper js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- 햄버거 메뉴 안돼서 인터넷 긁어온 jq -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <!-- 내가 만든 js -->
   <script defer src="lush.js"></script>
 </head>
 
 <body>
   <main>
-    <header class="flex">
-      <a href="#">
-        <img src="./images/figma/LUSH_mini_logo.png" alt="러쉬 로고 이미지입니다" /></a>
+    <header>
+      <a class="menu-trigger" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <!-- <a href="#">
+        <img src="./images/figma/LUSH_mini_logo.png" alt="러쉬 로고 이미지입니다" /></a> -->
       <ul class="flex">
-        <li>about</li>
+        <li><a href=".about">about</a></li>
         <li>services</li>
         <li>product</li>
         <li>contact</li>
@@ -49,8 +56,8 @@
       <div class="bg">
         <img src="./images/figma/bg_01.png" alt="러쉬 배경 왼쪽 야자수 잎 이미지입니다" />
         <img src="./images/figma/bg_02.png" alt="러쉬 배경 오른쪽 야자수 잎 이미지입니다" />
-        <img src="./images/figma/bg_03.png" alt="러쉬 배경  길다란 하얀꽃 줄기 이미지입니다" />
-        <img src="./images/figma/bg_04.png" alt="러쉬 배경 왼쪽 하단 하얀꽃 줄기 이미지입니다" />
+        <img src="./images/figma/bg_03.png" alt="러쉬 배경 왼쪽 길다란 하얀꽃 줄기 이미지입니다" />
+        <img src="./images/figma/bg_04.png" alt="러쉬 배경 오른쪽 하단 하얀꽃 줄기 이미지입니다" />
         <img src="./images/figma/bg_05.png" alt="러쉬 배경 왼쪽 상단에 쓰이는 하얀꽃 이미지 입니다" />
         <img src="./images/figma/bg_06.png" alt="러쉬 배경 오른쪽 하단 하얀꽃 이미지 입니다" />
       </div>
@@ -205,7 +212,29 @@
             통신판매업 신고번화 : 2012-서울서초-0647 | 개인정보보호책임자 :
             신상훈
           </li>
-          <li>copyright 더 써야함 까먹고 안씀;;;</li>
+          <li>COPYRIGHT © LUSHKOREA.CO.LTD.ALL RIGHTS RESERVED.</li>
+        </ul>
+        <ul class="icon">
+          <li>
+            <a href="https://www.youtube.com/user/LUSHKOREA1?app=desktop" target="_blank"><img
+                src="./images/LUSH_img/ico_youtube.svg" alt="네이버 블로그 바로가기 아이콘 이미지입니다"></a>
+          </li>
+          <li>
+            <a href="https://pf.kakao.com/_VEbUM" target="_blank"><img src="./images/LUSH_img/ico_channel.svg"
+                alt="네이버 블로그 바로가기 아이콘 이미지입니다"></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/LUSHKOREA" target="_blank"><img src="./images/LUSH_img/ico_twitter.svg"
+                alt="네이버 블로그 바로가기 아이콘 이미지입니다"></a>
+          </li>
+          <li>
+            <a href="https://blog.naver.com/lushkr1" target="_blank"><img src="./images/LUSH_img/ico_blog.svg"
+                alt="네이버 블로그 바로가기 아이콘 이미지입니다"></a>
+          </li>
+          <li>
+            <a href="https://m.post.naver.com/lushkr1" target="_blank"><img src="./images/LUSH_img/ico_naver.svg"
+                alt="네이버 블로그 바로가기 아이콘 이미지입니다"></a>
+          </li>
         </ul>
       </div>
       <div class="center">
