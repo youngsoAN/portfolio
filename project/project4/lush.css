@@ -21,6 +21,13 @@ main {
   height: 100%;
   font-family: "Geologica", "Noto Sans KR", sans-serif;
 }
+/* 마우스 따라다니는거 */
+.follow_mouse {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 99999;
+}
 /* 시작! */
 
 header {
@@ -48,6 +55,7 @@ header.active {
 .menu-trigger {
   margin-right: 70px;
   margin-bottom: 50px;
+  /* padding: 20px; */
 }
 .menu-trigger,
 .menu-trigger span {
@@ -60,8 +68,8 @@ header.active {
   position: relative;
   top: 40px;
   left: -80px;
-  width: 50px;
-  height: 44px;
+  width: 40px;
+  height: 34px;
 }
 
 .menu-trigger span {
@@ -78,7 +86,7 @@ header.active {
 }
 
 .menu-trigger span:nth-of-type(2) {
-  top: 20px;
+  top: 15px;
 }
 
 .menu-trigger span:nth-of-type(3) {
@@ -87,21 +95,16 @@ header.active {
 /* type-02 */
 /* 중앙 라인이 고정된 자리에서 투명하게 사라지며 상하라인  회전하며 엑스자 만들기 */
 .menu-trigger.active-2 span:nth-of-type(1) {
-  -webkit-transform: translateY(20px) rotate(-315deg);
-  transform: translateY(20px) rotate(-315deg);
+  -webkit-transform: translateY(15px) rotate(-315deg);
+  transform: translateY(15px) rotate(-315deg);
 }
 .menu-trigger.active-2 span:nth-of-type(2) {
   opacity: 0;
 }
 .menu-trigger.active-2 span:nth-of-type(3) {
-  -webkit-transform: translateY(-20px) rotate(315deg);
-  transform: translateY(-20px) rotate(315deg);
+  -webkit-transform: translateY(-15px) rotate(315deg);
+  transform: translateY(-15px) rotate(315deg);
 }
-/* 
-header img {
-  width: 100px;
-  height: 100%;
-} */
 header ul {
   flex-direction: column;
 }
@@ -182,7 +185,7 @@ header ul li {
   text-transform: uppercase;
   color: #ddd;
   line-height: 1;
-  transform: translateY(220px);
+  transform: translateY(200px);
   opacity: 0;
   transition: 0.5s;
   text-shadow: 5px 5px 7px #1f1f1f83;
@@ -211,7 +214,7 @@ header ul li {
 /* 러쉬 이미지 */
 .lush_main .img {
   width: 800px;
-  transform: translateY(-400px);
+  transform: translateY(-200px);
   transition: 0.5s;
   opacity: 0;
   margin-top: 200px;
@@ -219,7 +222,7 @@ header ul li {
 .lush_main:hover .img {
   transform: translateY(0);
   opacity: 1;
-  transition-delay: 0.5s;
+  transition-delay: 0.7s;
 }
 /******* 러쉬 메인 끝! *******/
 
@@ -337,6 +340,8 @@ header ul li {
 .services .flex {
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: -50px;
 }
 
 .services .flex li {
@@ -345,18 +350,18 @@ header ul li {
   /* top: -30px; */
 }
 .services .flex img {
-  z-index: 999;
-  /* width: 130%; */
   width: 350px;
   transition: 0.2s;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  filter: blur(1px);
 }
 .services .flex li:hover img {
   /* transform: scale(1.02); */
   /* border: 5px solid #ffffff; */
   opacity: 1;
   transform: translateY(-30px);
+  filter: blur(0);
 }
 
 .product {
@@ -528,17 +533,6 @@ footer .text .center ul li,
 footer .text .right ul li {
   margin: 5px 0;
 }
-footer .text .left .icon {
-  display: flex;
-  align-items: center;
-  height: 10px;
-}
-footer .text .left .icon li {
-  margin: 0 5px;
-}
-footer .text .left .icon img {
-  width: 30px;
-}
 .button {
   width: 100%;
   color: #000000;
@@ -554,7 +548,7 @@ footer .text .left .icon img {
 .contact h1 .move_text {
   transform: translateY(250px) rotate(50deg);
   opacity: 0;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 /* 호버시 나타나기 */
 .lush_main:hover .text h1 .move_text,
@@ -566,50 +560,50 @@ footer .text .left .icon img {
   opacity: 1;
 }
 /* 글자 따로 움직이게 딜레이 줌 */
-.lush_main:hover .text h1 .move_text:nth-child(1),
-.about:hover .text h1 .move_text:nth-child(1),
-.services:hover h1 .move_text:nth-child(1),
-.product:hover h1 .move_text:nth-child(1),
-.contact:hover h1 .move_text:nth-child(1) {
-  transition-delay: 0.1s;
-}
 .lush_main:hover .text h1 .move_text:nth-child(2),
 .about:hover .text h1 .move_text:nth-child(2),
 .services:hover h1 .move_text:nth-child(2),
 .product:hover h1 .move_text:nth-child(2),
 .contact:hover h1 .move_text:nth-child(2) {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 .lush_main:hover .text h1 .move_text:nth-child(3),
 .about:hover .text h1 .move_text:nth-child(3),
 .services:hover h1 .move_text:nth-child(3),
 .product:hover h1 .move_text:nth-child(3),
 .contact:hover h1 .move_text:nth-child(3) {
-  transition-delay: 0.3s;
+  transition-delay: 0.15s;
 }
 .lush_main:hover .text h1 .move_text:nth-child(4),
 .about:hover .text h1 .move_text:nth-child(4),
 .services:hover h1 .move_text:nth-child(4),
 .product:hover h1 .move_text:nth-child(4),
 .contact:hover h1 .move_text:nth-child(4) {
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
 }
+.lush_main:hover .text h1 .move_text:nth-child(5),
 .about:hover .text h1 .move_text:nth-child(5),
 .services:hover h1 .move_text:nth-child(5),
 .product:hover h1 .move_text:nth-child(5),
 .contact:hover h1 .move_text:nth-child(5) {
-  transition-delay: 0.5s;
+  transition-delay: 0.25s;
 }
+.about:hover .text h1 .move_text:nth-child(6),
 .services:hover h1 .move_text:nth-child(6),
 .product:hover h1 .move_text:nth-child(6),
 .contact:hover h1 .move_text:nth-child(6) {
-  transition-delay: 0.6s;
+  transition-delay: 0.3s;
 }
 .services:hover h1 .move_text:nth-child(7),
 .product:hover h1 .move_text:nth-child(7),
 .contact:hover h1 .move_text:nth-child(7) {
-  transition-delay: 0.7s;
+  transition-delay: 0.35s;
 }
-.services:hover h1 .move_text:nth-child(8) {
+.services:hover h1 .move_text:nth-child(8),
+.product:hover h1 .move_text:nth-child(8),
+.contact:hover h1 .move_text:nth-child(8) {
+  transition-delay: 0.4s;
+}
+/* .services:hover h1 .move_text:nth-child(8) {
   transition-delay: 0.8s;
-}
+} */

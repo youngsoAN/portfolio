@@ -1,18 +1,4 @@
 var swiper = new Swiper(".mySwiper", {
-  // effect: "coverflow",
-  // grabCursor: true,
-  // centeredSlides: true,
-  // slidesPerView: "auto",
-  // coverflowEffect: {
-  //   rotate: 40,
-  //   stretch: 0,
-  //   depth: 100,
-  //   modifier: 1,
-  //   slideShadows: true,
-  // },
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //
   centeredSlides: true,
   slidesPerView: "auto",
   slideToClickedSlide: true,
@@ -39,8 +25,8 @@ burger.each(function (index) {
 // 클릭이벤트
 function handleTextClick(event) {
   var moveText = event.target; // 클릭된 요소 가져오기
-  var randomColor = getRandomColor(); // 랜덤한 색상 생성
-  moveText.style.color = randomColor; // 글자 색상 변경
+  var randomColor = getRandomColor();
+  moveText.style.color = randomColor;
 }
 
 // 랜덤한 색상 생성 함수
@@ -58,3 +44,25 @@ var moveTextElements = document.getElementsByClassName("move_text");
 for (var i = 0; i < moveTextElements.length; i++) {
   moveTextElements[i].addEventListener("click", handleTextClick);
 }
+
+// 마우스 따라다니는 이벤트
+$(document).ready(function () {
+  $(document).mousemove(function (event) {
+    var mouseX = event.pageX;
+    var mouseY = event.pageY;
+
+    $(".follow_mouse").each(function () {
+      var followmouse = $(this);
+      var offsetX = parseInt(followmouse.attr("data-offsetX"));
+      var offsetY = parseInt(followmouse.attr("data-offsetY"));
+
+      followmouse.css({
+        left: mouseX + offsetX + 5,
+        top: mouseY + offsetY + 5,
+      });
+    });
+  });
+});
+
+// 마우스 감추기
+document.body.style.cursor = "none";
